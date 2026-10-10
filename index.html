@@ -232,4 +232,101 @@
                 <div class="bg-[#17261E] border border-[#23382E] rounded overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=600&q=80" alt="Makrana Pure White" class="h-48 w-full object-cover">
                     <div class="p-4">
-                        <h4 class
+                        <h4 class="font-medium text-[#D4AF37] mb-1">Makrana Pure White</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Legendary heritage white marble with timeless luster and lifetime durability.</p>
+                        <a href="#contact" onclick="closeMarbleModal()" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Inquire This Stone &rarr;</a>
+                    </div>
+                </div>
+                <!-- Additional variations -->
+                <div class="bg-[#17261E] border border-[#23382E] rounded p-6 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-medium text-[#D4AF37] mb-2">+ 18 More Premium Varieties</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Includes Botticino, Crema Marfil, Onyx, Travertine, Rainforest Green, Tiger Skin, Yellow Gold, and specialized imported selections.</p>
+                    </div>
+                    <a href="#contact" onclick="closeMarbleModal()" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Request Complete PDF Catalog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for Modal Handling -->
+    <script>
+        function openMarbleModal() {
+            document.getElementById('marbleModal').classList.remove('hidden');
+        }
+        function closeMarbleModal() {
+            document.getElementById('marbleModal').classList.add('hidden');
+        }
+    </script>
+
+    <!-- Our Process & Quarry Video Section -->
+    <section id="process" class="bg-[#111C16] text-[#F7F5F0] py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest block mb-2">From Quarry to Finished Surface</span>
+                <h2 class="text-3xl font-light tracking-tight">Our Precision Process & Quality Inspection</h2>
+            </div>
+            <!-- Video Player -->
+            <div class="max-w-4xl mx-auto mb-16 rounded-lg overflow-hidden border border-[#23382E] shadow-2xl bg-black">
+                <video controls autoplay muted loop playsinline class="w-full h-auto object-cover max-h-[550px]">
+                    <source src="process.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#EBE7DF] py-24 border-t border-stone-300">
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest block mb-2">Get In Touch</span>
+                <h2 class="text-3xl font-light text-[#111C16] tracking-tight mb-4">LET'S FIND THE RIGHT STONE FOR YOUR PROJECT</h2>
+                <p class="text-stone-700 text-sm leading-relaxed mb-8">Tell us what you are looking for — material, colour, thickness, quantity, application or required dimensions.</p>
+                
+                <div class="space-y-3 text-sm text-stone-800">
+                    <p><i class="fa-solid fa-envelope mr-3 text-[#111C16]"></i> petragstones@gmail.com</p>
+                    <p><i class="fa-solid fa-phone mr-3 text-[#111C16]"></i> +91 9166995853</p>
+                    <p><i class="fa-solid fa-location-dot mr-3 text-[#111C16]"></i> Jaipur, Rajasthan, India</p>
+                </div>
+            </div>
+
+            <div class="bg-[#F7F5F0] p-8 border border-stone-300 shadow-sm">
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Your Name / Company</label>
+                        <input type="text" name="name" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Email Address</label>
+                        <input type="email" name="email" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Project Details & Requirements</label>
+                        <textarea name="message" rows="4" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]" placeholder="Mention material required, colour, quantity, and delivery port..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-[#111C16] hover:bg-[#1a2d23] text-[#F7F5F0] font-medium py-3.5 text-xs uppercase tracking-widest transition">Request a Quotation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Social Links -->
+    <footer class="bg-[#0b130f] text-stone-400 py-12 text-center text-xs tracking-widest uppercase border-t border-[#17261E]">
+        <p class="mb-4 text-[#D4AF37] font-light text-sm tracking-[0.2em]">NATURAL STONE. DISTINCTIVE SPACES.</p>
+        
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="https://www.instagram.com/petragstones?stkn=MWZsNHd6cmd6ZHhydA==" target="_blank" class="text-stone-300 hover:text-[#D4AF37] text-lg transition">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1J9FymGec3/" target="_blank" class="text-stone-300 hover:text-[#D4AF37] text-lg transition">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+
+        <p>&copy; 2026 PETRA G STONES (Founder: Manish Singh). All Rights Reserved. Jaipur, India.</p>
+    </footer>
+
+</body>
+</html>

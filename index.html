@@ -164,7 +164,7 @@
             </div>
             
             <div id="modalGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <!-- Grid items with short summary populated by JS -->
+                <!-- Grid items populated by JS -->
             </div>
         </div>
     </div>
@@ -175,20 +175,16 @@
             <button onclick="closeDetailModal()" class="absolute top-4 right-6 text-stone-700 hover:text-black text-3xl font-bold cursor-pointer">&times;</button>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mt-4">
-                <!-- Left: Big Image with Finish Tag -->
                 <div class="relative rounded-lg overflow-hidden border border-stone-300 shadow-md bg-stone-900 h-[350px] lg:h-[420px]">
                     <img id="detailImg" src="" alt="Stone Detail" class="w-full h-full object-cover">
                     <span class="absolute bottom-3 left-3 bg-[#111C16] text-[#D4AF37] text-xs font-semibold px-3 py-1.5 uppercase tracking-wider rounded">Finish: Polished</span>
                 </div>
 
-                <!-- Right: Full Title & Detailed Description + Action Buttons -->
                 <div>
                     <span class="text-[#D4AF37] text-xs uppercase tracking-[0.2em] font-semibold block mb-2">Pyros Surfaces Worldwide • Export Grade</span>
                     <h2 id="detailTitle" class="text-3xl font-light text-[#111C16] tracking-tight mb-4">Stone Name</h2>
                     
-                    <div id="detailDesc" class="text-stone-700 text-xs md:text-sm leading-relaxed space-y-4 mb-8">
-                        <!-- Full Detailed Paragraphs -->
-                    </div>
+                    <div id="detailDesc" class="text-stone-700 text-xs md:text-sm leading-relaxed space-y-4 mb-8"></div>
 
                     <div class="flex flex-col sm:flex-row gap-4 pt-4 border-t border-stone-300">
                         <a href="#contact" onclick="closeDetailModal(); closeCategoryModal();" class="flex-1 bg-[#D4AF37] hover:bg-[#c5a030] text-[#111C16] font-semibold text-xs uppercase tracking-widest py-3.5 px-6 rounded text-center transition">
@@ -211,7 +207,7 @@
             ].map((name, idx) => ({
                 name: name, 
                 shortDesc: "Export grade premium natural granite surface with exceptional structural durability.",
-                desc: `${name} is a premier grade natural granite directly extracted from exclusive quarry reserves in India. Celebrated for its unique mineral patterns, structural integrity, and high durability, this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks. Processed in state-of-the-art automated manufacturing facilities, every slab undergoes strict thickness calibration tolerance in standard 20mm and 30mm profiles, polished to a mirror finish.`,
+                desc: `${name} is a premier grade natural granite directly extracted from exclusive quarry reserves in India. Celebrated for its unique mineral patterns, structural integrity, and high durability, this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.`,
                 img: `https://images.unsplash.com/photo-${1600585154340 + (idx % 15)}-be6161a56a0c?auto=format&fit=crop&w=800&q=85`
             })),
 
@@ -219,145 +215,145 @@
                 {
                     name: "Fantasy Silver Marble",
                     shortDesc: "Premier grade natural marble featuring distinctive movement, veining, and rich aesthetic appeal.",
-                    desc: "Fantasy Silver Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.72 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Fantasy Silver Marble undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.\n\nPetra G Stones exports Fantasy Silver Marble with complete B2B compliance including international export grade crated packaging for zero-breakage global freight.",
+                    desc: "Fantasy Silver Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.72 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
                     img: "FANTASY SILVER IM.JPG"
                 },
                 {
                     name: "River White Marble",
                     shortDesc: "Characterized by flowing linear grey veining reminiscent of meandering natural streams.",
-                    desc: "River White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.70 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of River White Marble undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    desc: "River White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.70 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles.",
                     img: "RIVER WHITE - JE.JPG"
                 },
                 {
                     name: "Toronto Marble",
                     shortDesc: "Brings sophisticated multi-tonal stratification and superior polishing properties.",
-                    desc: "Toronto Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.70 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Toronto Marble undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    desc: "Toronto Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.70 g/cm³), this surface brings timeless architectural elegance.",
                     img: "Toronto Marble.png"
                 },
                 {
                     name: "Spider Green Marble",
                     shortDesc: "Defined by an intricate web-like white network spread across a deep green background.",
-                    desc: "Spider Green Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Udaipur, Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.73 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Spider Green Marble undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    desc: "Spider Green Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Udaipur, Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.73 g/cm³).",
                     img: "Spider Green Marble.png"
                 },
                 {
                     name: "Shadow Storm Marble",
                     shortDesc: "Blends cloudy grey waves and crisp highlights for versatile modern applications.",
-                    desc: "Shadow Storm Marble is directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.71 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Shadow Storm Marble undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    desc: "Shadow Storm Marble is directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.71 g/cm³).",
                     img: "Shadow Storm Marble.png"
                 },
                 {
                     name: "Rosso Levanto Marble",
                     shortDesc: "A striking deep red natural stone webbed with crisp white calcite veins.",
-                    desc: "Rosso Levanto Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.74 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Rosso Levanto Marble undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    desc: "Rosso Levanto Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in India. Celebrated for its unique veining and high mineral density (2.74 g/cm³).",
                     img: "Rosso Levanto.png"
                 },
                 {
                     name: "River Blue Marble",
                     shortDesc: "Showcases soothing aquatic blue and grey tones with fluid natural movement.",
-                    desc: "River Blue Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.72 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of River Blue Marble undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles.",
+                    desc: "River Blue Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining and high mineral density (2.72 g/cm³).",
                     img: "River Blue Marble_.png"
                 },
                 {
                     name: "Red Jasper Marble",
                     shortDesc: "Infused with rich burgundy and earthy red hues, delivering striking visual depth.",
-                    desc: "Red Jasper Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.75 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab undergoes strict thickness calibration in standard 20mm and 30mm profiles.",
+                    desc: "Red Jasper Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining and high mineral density (2.75 g/cm³).",
                     img: "Red Jasper Marble_.png"
                 },
                 {
                     name: "Red Flamingo Marble",
                     shortDesc: "Features vibrant reddish tones and exotic crystalline patterns for bold design statements.",
-                    desc: "Red Flamingo Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.73 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Red Flamingo Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Red Flamingo Marble_.png"
                 },
                 {
                     name: "Raymond White Marble",
                     shortDesc: "A premium architectural surface offering uniform brightness and durability.",
-                    desc: "Raymond White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.68 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Raymond White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Raymond White Marble.png"
                 },
                 {
                     name: "Mercury White Marble",
                     shortDesc: "Provides a luminous, clean surface finish with refined crystalline structure.",
-                    desc: "Mercury White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.69 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Mercury White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Mercury White Marble.png"
                 },
                 {
                     name: "Mercury Black Marble",
                     shortDesc: "Offers a deep carbon-black canvas accentuated by striking mineral streaks.",
-                    desc: "Mercury Black Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.74 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Mercury Black Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Mercury Black Marble.png"
                 },
                 {
                     name: "Lady Onyx Marble",
                     shortDesc: "A translucent architectural marvel renowned for pastel layers and backlight compatibility.",
-                    desc: "Lady Onyx Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Salumber, Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.67 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Lady Onyx Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Salumber, Rajasthan, India.",
                     img: "Lady Onyx Marble.png"
                 },
                 {
                     name: "Indian Statuario Marble",
                     shortDesc: "Exhibits pristine white backgrounds crossed with elegant grey veining.",
-                    desc: "Indian Statuario Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Makrana, Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.70 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Indian Statuario Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Makrana, Rajasthan, India.",
                     img: "Indian Statuario Marble.png"
                 },
                 {
                     name: "Indian Pistachio Marble",
                     shortDesc: "Features unique earthy green-gold undertones, ideal for statement interiors.",
-                    desc: "Indian Pistachio Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.71 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Indian Pistachio Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Indian Pistachio Marble.png"
                 },
                 {
                     name: "Icon Black Marble",
                     shortDesc: "Delivers dramatic dark aesthetics with subtle mineral highlights.",
-                    desc: "Icon Black Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.76 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Icon Black Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Icon Black Marble.png"
                 },
                 {
                     name: "Forest Green Marble",
                     shortDesc: "Offers deep botanical hues and intricate natural veining patterns.",
-                    desc: "Forest Green Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rishabhdeo, Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.75 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Forest Green Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rishabhdeo, Rajasthan, India.",
                     img: "Forest Green Marble_.png"
                 },
                 {
                     name: "Fantasy White Marble",
                     shortDesc: "A luxury natural stone featuring exquisite white and grey tones with stunning natural veining.",
-                    desc: "Fantasy White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.70 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks. Processed in state-of-the-art automated manufacturing facilities, every slab undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles.",
+                    desc: "Fantasy White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Fantasy White Marble.png"
                 },
                 {
                     name: "Fantasy Brown Marble",
                     shortDesc: "Exotic wavy brown and grey patterns with exceptional structural integrity.",
-                    desc: "Fantasy Brown Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.73 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Fantasy Brown Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Fantasy Brown Marble.png"
                 },
                 {
                     name: "Bruno White Marble",
                     shortDesc: "Timeless luxury natural marble featuring distinctive movement and rich veining.",
-                    desc: "Bruno White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.68 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Bruno White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Bruno White Marble.png"
                 },
                 {
                     name: "Cherry Gold Marble",
                     shortDesc: "Rich red and gold aesthetic surface with high mineral density.",
-                    desc: "Cherry Gold Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.72 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Cherry Gold Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Cherry Gold Marble.png"
                 },
                 {
                     name: "Crema Venato Marble",
                     shortDesc: "Subtle cream tones with delicate veining for serene architectural spaces.",
-                    desc: "Crema Venato Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining and high mineral density (2.69 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Crema Venato Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Crema Venato Marble_.png"
                 },
                 {
                     name: "Dark Green Marble",
                     shortDesc: "Deep imperial green natural marble with exquisite white calcite webbed patterns.",
-                    desc: "Dark Green Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Udaipur, Rajasthan, India. Celebrated for its unique veining and mineral density (2.74 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Dark Green Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Udaipur, Rajasthan, India.",
                     img: "Dark Green Marble_.png"
                 },
                 {
                     name: "Aqua Marine Marble",
                     shortDesc: "Premier grade blue-grey natural marble with exquisite structural density.",
-                    desc: "Aqua Marine Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.71 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
+                    desc: "Aqua Marine Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     img: "Aqua Marine Marble.png"
                 }
             ],
@@ -367,7 +363,7 @@
             ].map((name, idx) => ({
                 name: name, 
                 shortDesc: "Textured and stacked stone panels designed for architectural elevations.",
-                desc: `${name} is crafted for exquisite architectural elevations and feature walls. Processed with precise split-face or waterjet finishes to withstand exterior weathering while retaining natural mineral beauty.`,
+                desc: `${name} is crafted for exquisite architectural elevations and feature walls.`,
                 img: `https://images.unsplash.com/photo-${1513694203232 + (idx % 4)}-719a280e022f?auto=format&fit=crop&w=800&q=85`
             })),
 
@@ -376,7 +372,7 @@
             ].map((name, idx) => ({
                 name: name, 
                 shortDesc: "High-density wide-format engineered porcelain slab for modern architecture.",
-                desc: `${name} is a high-density wide-format engineered porcelain slab offering superior scratch, heat, and stain resistance for modern architectural floors and walls.`,
+                desc: `${name} is a high-density wide-format engineered porcelain slab offering superior durability.`,
                 img: `https://images.unsplash.com/photo-${1600565193348 + (idx % 4)}-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=85`
             })),
 
@@ -385,7 +381,7 @@
             ].map((name, idx) => ({
                 name: name, 
                 shortDesc: "Hard, expressive and naturally sophisticated exotic quartzite surface.",
-                desc: `${name} is an exotic quartzite surface combining extreme geological hardness with striking translucent crystal patterns.`,
+                desc: `${name} is an exotic quartzite surface combining extreme geological hardness with striking patterns.`,
                 img: `https://images.unsplash.com/photo-${1618221195710 + (idx % 4)}-dd6b41faaea6?auto=format&fit=crop&w=800&q=85`
             })),
 
@@ -394,7 +390,7 @@
             ].map((name, idx) => ({
                 name: name, 
                 shortDesc: "Natural earthy texture and rich tones, perfect for outdoor paving and landscaping.",
-                desc: `${name} features natural earthy textures and rich mineral tones, ideal for outdoor paving, coping, and architectural landscaping.`,
+                desc: `${name} features natural earthy textures and rich mineral tones, ideal for outdoor paving and landscaping.`,
                 img: `https://images.unsplash.com/photo-${1600585154526 + (idx % 3)}-990dced4db0d?auto=format&fit=crop&w=800&q=85`
             })),
 
@@ -403,7 +399,7 @@
             ].map((name, idx) => ({
                 name: name, 
                 shortDesc: "Subtle sedimentary limestone with smooth finishes for architectural flooring.",
-                desc: `${name} is a fine sedimentary limestone with smooth honed finishes, ideal for serene architectural flooring and facades.`,
+                desc: `${name} is a fine sedimentary limestone with smooth honed finishes for architectural flooring.`,
                 img: `https://images.unsplash.com/photo-${1513694203232 + (idx % 3)}-719a280e022f?auto=format&fit=crop&w=800&q=85`
             })),
 
@@ -412,15 +408,12 @@
             ].map((name, idx) => ({
                 name: name, 
                 shortDesc: "Fine-grained metamorphic natural slate offering unique split surfaces.",
-                desc: `${name} is a fine-grained metamorphic natural slate offering unique cleft split surfaces for modern wall cladding and flooring.`,
+                desc: `${name} is a fine-grained metamorphic natural slate offering unique split surfaces.`,
                 img: `https://images.unsplash.com/photo-${1600585154340 + (idx % 3)}-be6161a56a0c?auto=format&fit=crop&w=800&q=85`
             }))
         };
 
-        let currentCategory = '';
-
         function openCategoryModal(catKey) {
-            currentCategory = catKey;
             const list = stoneData[catKey] || [];
             const modalTitle = document.getElementById('modalTitle');
             const modalGrid = document.getElementById('modalGrid');
@@ -458,7 +451,6 @@
             document.getElementById('detailImg').src = item.img;
             document.getElementById('detailTitle').innerText = item.name;
             
-            // Format paragraphs
             const paragraphs = item.desc.split('\n\n');
             let descHtml = '';
             paragraphs.forEach(p => {
@@ -466,7 +458,6 @@
             });
             document.getElementById('detailDesc').innerHTML = descHtml;
 
-            // WhatsApp direct inquiry pre-filled message
             const waMsg = encodeURIComponent(`Hello Petra G Stones, I am interested in inquiring about ${item.name}. Please share pricing and availability.`);
             document.getElementById('detailWhatsApp').href = `https://wa.me/919166995853?text=${waMsg}`;
 
@@ -489,7 +480,7 @@
                 </p>
             </div>
 
-            <!-- Video Player with Direct Fallback Link for Guaranteed Playback -->
+            <!-- Video Player -->
             <div class="max-w-4xl mx-auto mb-8 rounded-lg overflow-hidden border border-[#23382E] shadow-2xl bg-black">
                 <video controls preload="auto" class="w-full h-auto object-cover max-h-[550px]">
                     <source src="approach_2.mp4" type="video/mp4">
@@ -561,97 +552,4 @@
                 <h2 class="text-3xl font-light tracking-tight mb-4">Marble Manufacturing Process: From Block to Tile</h2>
             </div>
 
-            <!-- Parallel Layout: Video on one side, Process Steps on the other -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <!-- Video Column -->
-                <div class="sticky top-28 rounded-lg overflow-hidden border border-[#23382E] shadow-2xl bg-black">
-                    <video controls preload="auto" class="w-full h-auto object-cover">
-                        <source src="process.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <!-- Process Steps Column -->
-                <div class="space-y-6">
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">01. Quarrying & Block Extraction</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">Premium-quality marble is extracted from natural quarries using advanced cutting techniques. Large marble blocks are carefully selected based on their color, veining, and structural quality.</p>
-                    </div>
-
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">02. Block Cutting</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">The selected marble blocks are transported to the processing facility, where advanced gang saws or block-cutting machines cut them into slabs of the required thickness.</p>
-                    </div>
-
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">03. Slab Processing & Polishing</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">The slabs undergo surface calibration, resin treatment when required, and progressive polishing to enhance their natural patterns, smoothness, and finish.</p>
-                    </div>
-
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">04. Tile Cutting & Sizing</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">Processed marble slabs are cut into tiles of specified dimensions using precision cutting machines. Edges and thickness are checked to meet the required project specifications.</p>
-                    </div>
-
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">05. Quality Inspection</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">Each tile is inspected for surface finish, dimensions, edge quality, and visible defects. Tiles are sorted according to their shade, pattern, and quality grade.</p>
-                    </div>
-
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">06. Packaging & Export</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">The finished tiles are carefully packed in protective materials and sturdy wooden crates, ready for secure transportation and international delivery.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-[#EBE7DF] py-24 border-t border-stone-300">
-        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest block mb-2">Get In Touch</span>
-                <h2 class="text-3xl font-light text-[#111C16] tracking-tight mb-4">LET'S FIND THE RIGHT STONE FOR YOUR PROJECT</h2>
-                <p class="text-stone-700 text-sm leading-relaxed mb-8">Tell us what you are looking for — material, colour, thickness, quantity, application or required dimensions.</p>
-                <div class="space-y-3 text-sm text-stone-800">
-                    <p><i class="fa-solid fa-envelope mr-3 text-[#111C16]"></i> <a href="mailto:petragstones@gmail.com" class="hover:underline">petragstones@gmail.com</a></p>
-                    <p><i class="fa-solid fa-phone mr-3 text-[#111C16]"></i> <a href="tel:+919166995853" class="hover:underline">+91 9166995853</a></p>
-                    <p><i class="fa-brands fa-whatsapp mr-3 text-green-600"></i> <a href="https://wa.me/919166995853" target="_blank" class="hover:underline font-medium">Chat on WhatsApp</a></p>
-                    <p><i class="fa-solid fa-location-dot mr-3 text-[#111C16]"></i> Jaipur, Rajasthan, India</p>
-                </div>
-            </div>
-            <div class="bg-[#F7F5F0] p-8 border border-stone-300 shadow-sm">
-                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
-                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Your Name / Company</label>
-                        <input type="text" name="name" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Email Address</label>
-                        <input type="email" name="email" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Project Details & Requirements</label>
-                        <textarea name="message" rows="4" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]" placeholder="Mention material required, colour, quantity, and delivery port..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-[#111C16] hover:bg-[#1a2d23] text-[#F7F5F0] font-medium py-3.5 text-xs uppercase tracking-widest transition">Request a Quotation</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer & Social Links -->
-    <footer class="bg-[#0b130f] text-stone-400 py-12 text-center text-xs tracking-widest uppercase border-t border-[#17261E]">
-        <p class="mb-4 text-[#D4AF37] font-light text-sm tracking-[0.2em]">NATURAL STONE. DISTINCTIVE SPACES.</p>
-        <div class="flex justify-center space-x-6 mb-6">
-            <a href="https://www.instagram.com/petragstones?stkn=MWZsNHd6cmd6ZHhydA==" target="_blank" class="text-stone-300 hover:text-[#D4AF37] text-lg transition"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/share/1J9FymGec3/" target="_blank" class="text-stone-300 hover:text-[#D4AF37] text-lg transition"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://wa.me/919166995853" target="_blank" class="text-stone-300 hover:text-green-400 text-lg transition"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-        <p>&copy; 2026 PETRA G STONES (Founder: Manish Singh). All Rights Reserved. Jaipur, India.</p>
-    </footer>
-
-</body>
-</html>
+            <div class="grid

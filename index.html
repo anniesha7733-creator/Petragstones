@@ -169,7 +169,7 @@
         </div>
     </div>
 
-    <!-- Complete Database Script with Uploaded Image Integration -->
+    <!-- Complete Database Script with Exact Uploaded Marble Images -->
     <script>
         const stoneData = {
             granite: [
@@ -177,56 +177,142 @@
             ].map((name, idx) => ({
                 name: name, 
                 desc: "Export grade premium natural granite surface with exceptional structural durability.", 
-                img: `https://images.unsplash.com/photo-${1600585154340 + (idx % 15)}-be6161a56a0c?auto=format&fit=crop&w=800&q=85`
+                img: `https://images.unsplash.com/photo-\${1600585154340 + (idx % 15)}-be6161a56a0c?auto=format&fit=crop&w=800&q=85`
             })),
 
             marble: [
                 {
                     name: "Aqua Marine Marble",
-                    desc: "Aqua Marine Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.71 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks. Processed in state-of-the-art automated manufacturing facilities, every slab undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    desc: "Aqua Marine Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.71 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.",
                     img: "Aqua Marine Marble.png"
                 },
                 {
                     name: "Bruno White Marble",
-                    desc: "Bruno White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.68 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks. Processed in state-of-the-art automated manufacturing facilities, every slab undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
-                    img: "https://images.unsplash.com/photo-1598928506312-c55ded91a20c?auto=format&fit=crop&w=800&q=85"
+                    desc: "Bruno White Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.68 g/cm³), this surface brings timeless architectural elegance.",
+                    img: "Bruno White Marble.png"
                 },
                 {
                     name: "Cherry Gold Marble",
-                    desc: "Cherry Gold Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.72 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks. Processed in state-of-the-art automated manufacturing facilities, every slab undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
-                    img: "https://images.unsplash.com/photo-1598928506313-c55ded91a20c?auto=format&fit=crop&w=800&q=85"
+                    desc: "Cherry Gold Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.72 g/cm³).",
+                    img: "Cherry Gold Marble.png"
                 },
                 {
                     name: "Crema Venato Marble",
-                    desc: "Crema Venato Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.69 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks. Processed in state-of-the-art automated manufacturing facilities, every slab undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
-                    img: "https://images.unsplash.com/photo-1598928506314-c55ded91a20c?auto=format&fit=crop&w=800&q=85"
+                    desc: "Crema Venato Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining and high mineral density (2.69 g/cm³).",
+                    img: "Crema Venato Marble_.png"
                 },
                 {
                     name: "Dark Green Marble",
-                    desc: "Dark Green Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Udaipur, Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.74 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks. Processed in state-of-the-art automated manufacturing facilities, every slab undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
-                    img: "https://images.unsplash.com/photo-1598928506315-c55ded91a20c?auto=format&fit=crop&w=800&q=85"
+                    desc: "Dark Green Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Udaipur, Rajasthan, India. Celebrated for its unique veining and mineral density (2.74 g/cm³).",
+                    img: "Dark Green Marble_.png"
+                },
+                {
+                    name: "Fantasy Silver Marble",
+                    desc: "Fantasy Silver Marble is a premier grade natural marble featuring distinctive movement, veining, and rich aesthetic appeal.",
+                    img: "FANTASY SILVER IM.JPG"
                 },
                 {
                     name: "Fantasy Brown Marble",
-                    desc: "Fantasy Brown Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.73 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks. Processed in state-of-the-art automated manufacturing facilities, every slab undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
-                    img: "https://images.unsplash.com/photo-1598928506316-c55ded91a20c?auto=format&fit=crop&w=800&q=85"
+                    desc: "Fantasy Brown Marble is a premier grade natural marble directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining and high mineral density (2.73 g/cm³).",
+                    img: "Fantasy Brown Marble.png"
                 },
-                "Fantasy Silver Marble", "River White Marble", "Toronto Marble", "Spider Green Marble", "Shadow Storm Marble", "Rosso Levanto Marble", "River Blue Marble", "Red Jasper Marble", "Red Flamingo Marble", "Raymond White Marble", "Mercury White Marble", "Mercury Black Marble", "Lady Onyx Marble", "Indian Statuario Marble", "Indian Pistachio Marble", "Icon Black Marble", "Forest Green Marble", "Fantasy White Marble"
-            ].map((item, idx) => {
-                if (typeof item === 'object') return item;
-                return {
-                    name: item,
-                    desc: "Timeless luxury natural marble featuring distinctive movement and veining from exclusive Indian quarries.",
-                    img: `https://images.unsplash.com/photo-${1598928506311 + (idx % 5)}-c55ded91a20c?auto=format&fit=crop&w=800&q=85`
-                };
-            }),
+                {
+                    name: "Fantasy White Marble",
+                    desc: "Fantasy White Marble is a luxury natural stone featuring exquisite white and grey tones with stunning natural veining.",
+                    img: "Fantasy White Marble.png"
+                },
+                {
+                    name: "Forest Green Marble",
+                    desc: "Forest Green Marble offers deep botanical hues and intricate natural veining patterns for sophisticated spaces.",
+                    img: "Forest Green Marble_.png"
+                },
+                {
+                    name: "Icon Black Marble",
+                    desc: "Icon Black Marble delivers dramatic dark aesthetics with subtle mineral highlights for luxury architectural accents.",
+                    img: "Icon Black Marble.png"
+                },
+                {
+                    name: "Indian Pistachio Marble",
+                    desc: "Indian Pistachio Marble features unique earthy green-gold undertones, ideal for statement residential and commercial interiors.",
+                    img: "Indian Pistachio Marble.png"
+                },
+                {
+                    name: "Indian Statuario Marble",
+                    desc: "Indian Statuario Marble exhibits pristine white backgrounds crossed with elegant grey veining, mirroring classic Italian aesthetics.",
+                    img: "Indian Statuario Marble.png"
+                },
+                {
+                    name: "Lady Onyx Marble",
+                    desc: "Lady Onyx Marble is a translucent architectural marvel renowned for its delicate pastel layers and backlight compatibility.",
+                    img: "Lady Onyx Marble.png"
+                },
+                {
+                    name: "Mercury Black Marble",
+                    desc: "Mercury Black Marble offers a deep carbon-black canvas accentuated by striking mineral streaks.",
+                    img: "Mercury Black Marble.png"
+                },
+                {
+                    name: "Mercury White Marble",
+                    desc: "Mercury White Marble provides a luminous, clean surface finish with refined crystalline structure.",
+                    img: "Mercury White Marble.png"
+                },
+                {
+                    name: "River White Marble",
+                    desc: "River White Marble is characterized by flowing linear grey veining reminiscent of meandering natural streams.",
+                    img: "RIVER WHITE - JE.JPG"
+                },
+                {
+                    name: "Raymond White Marble",
+                    desc: "Raymond White Marble is a premium architectural surface offering uniform brightness and durability.",
+                    img: "Raymond White Marble.png"
+                },
+                {
+                    name: "Red Flamingo Marble",
+                    desc: "Red Flamingo Marble features vibrant reddish tones and exotic crystalline patterns for bold design statements.",
+                    img: "Red Flamingo Marble_.png"
+                },
+                {
+                    name: "Red Jasper Marble",
+                    desc: "Red Jasper Marble is infused with rich burgundy and earthy red hues, delivering striking visual depth.",
+                    img: "Red Jasper Marble_.png"
+                },
+                {
+                    name: "River Blue Marble",
+                    desc: "River Blue Marble showcases soothing aquatic blue and grey tones with fluid natural movement.",
+                    img: "River Blue Marble_.png"
+                },
+                {
+                    name: "Rosso Levanto Marble",
+                    desc: "Rosso Levanto Marble is a striking deep red natural stone webbed with crisp white calcite veins.",
+                    img: "Rosso Levanto.png"
+                },
+                {
+                    name: "Shadow Storm Marble",
+                    desc: "Shadow Storm Marble blends cloudy grey waves and crisp highlights for versatile modern applications.",
+                    img: "Shadow Storm Marble.png"
+                },
+                {
+                    name: "Spider Green Marble",
+                    desc: "Spider Green Marble is defined by its intricate web-like white network spread across a deep green background.",
+                    img: "Spider Green Marble.png"
+                },
+                {
+                    name: "Toronto Marble",
+                    desc: "Toronto Marble brings sophisticated multi-tonal stratification and superior polishing properties.",
+                    img: "Toronto Marble.png"
+                }
+            ].map((item) => ({
+                name: item.name,
+                desc: item.desc + " Processed in state-of-the-art automated manufacturing facilities with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles, polished to an extraordinary 95+ Gloss Luster finish.",
+                img: item.img
+            })),
 
             cladding: [
                 "Alaska Gold Pencil Line Wall Cladding", "Alaska Pink Ice Finish Wall Cladding", "Ash Grey 3D Wall Cladding Panel", "Ash Grey Variable Pencil Line Cladding", "Ash Grey Waterjet Finish Cladding", "Ash Grey Architectural Wall Cladding", "Ash Grey Waterfall & Hydro Finish Cladding", "Carbon Black Textured Wall Cladding", "Exotic Brown 3D Elevation Panel", "Exotic Grey Split Face Wall Cladding", "Fire Red Waterjet Finish Wall Cladding", "Green Pearl Architectural Elevation Panel", "MP Beige Natural Wall Cladding Panel", "MP Beige Textured Elevation Strip", "Matrix Pencil Line 3D Cladding", "Matrix Ribbed Architectural Cladding", "Matrix Grooved Elevation Panel", "Matrix Chiseled Wall Cladding", "Matrix Geometric 3D Panel", "Matrix Wave Textured Wall Cladding", "Matrix Classic 3D Elevation Cladding", "Mercury Brown 3D Wall Cladding", "Millennium Grey Interlocking Cladding Panel", "Millennium Grey Fluted Elevation Panel", "Millennium Grey Coral Finish Cladding", "Millennium Grey Textured Wall Cladding", "Olive Green Interlocking Elevation Strip", "Olive Green Textured Wall Cladding", "Onda White Wave 3D Wall Cladding", "Rajasthan Black Split Face Cladding", "Rajasthan White 3D Elevation Panel", "Rainforest Brown 3D Wall Cladding", "Rainforest Green Exotic Wall Cladding", "Red Pearl Architectural Elevation Panel", "Silicano Gold 3D Wall Cladding", "Star Galaxy Architectural Cladding Panel", "Toronto Grey Split Face Wall Cladding", "Toronto 5D Carved Architectural Panel", "Stacked Slate & Quartzite Elevation Strip (Pattern 1)", "Linear 3D Architectural Wall Cladding (Pattern 2)", "Split Face Natural Stone Wall Cladding (Pattern 3)", "Geometric Textured Elevation Panel (Pattern 4)", "Multi-Tonal Ledger Stone Wall Panel (Pattern 5)", "Rustic Multi-Slate 3D Cladding (Pattern 6)"
             ].map((name, idx) => ({
                 name: name, 
                 desc: "Textured and stacked stone panels designed for architectural elevations and feature walls.", 
-                img: `https://images.unsplash.com/photo-${1513694203232 + (idx % 4)}-719a280e022f?auto=format&fit=crop&w=800&q=85`
+                img: `https://images.unsplash.com/photo-\${1513694203232 + (idx % 4)}-719a280e022f?auto=format&fit=crop&w=800&q=85`
             })),
 
             porcelain: [
@@ -234,7 +320,7 @@
             ].map((name, idx) => ({
                 name: name, 
                 desc: "High-density wide-format engineered porcelain slab for modern architectural floors and walls.", 
-                img: `https://images.unsplash.com/photo-${1600565193348 + (idx % 4)}-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=85`
+                img: `https://images.unsplash.com/photo-\${1600565193348 + (idx % 4)}-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=85`
             })),
 
             quartzite: [
@@ -242,7 +328,7 @@
             ].map((name, idx) => ({
                 name: name, 
                 desc: "Hard, expressive and naturally sophisticated exotic quartzite surface.", 
-                img: `https://images.unsplash.com/photo-${1618221195710 + (idx % 4)}-dd6b41faaea6?auto=format&fit=crop&w=800&q=85`
+                img: `https://images.unsplash.com/photo-\${1618221195710 + (idx % 4)}-dd6b41faaea6?auto=format&fit=crop&w=800&q=85`
             })),
 
             sandstone: [
@@ -250,7 +336,7 @@
             ].map((name, idx) => ({
                 name: name, 
                 desc: "Natural earthy texture and rich tones, perfect for outdoor paving and landscaping.", 
-                img: `https://images.unsplash.com/photo-${1600585154526 + (idx % 3)}-990dced4db0d?auto=format&fit=crop&w=800&q=85`
+                img: `https://images.unsplash.com/photo-\${1600585154526 + (idx % 3)}-990dced4db0d?auto=format&fit=crop&w=800&q=85`
             })),
 
             limestone: [
@@ -258,7 +344,7 @@
             ].map((name, idx) => ({
                 name: name, 
                 desc: "Subtle sedimentary limestone with smooth finishes for architectural flooring.", 
-                img: `https://images.unsplash.com/photo-${1513694203232 + (idx % 3)}-719a280e022f?auto=format&fit=crop&w=800&q=85`
+                img: `https://images.unsplash.com/photo-\${1513694203232 + (idx % 3)}-719a280e022f?auto=format&fit=crop&w=800&q=85`
             })),
 
             slate: [
@@ -266,7 +352,7 @@
             ].map((name, idx) => ({
                 name: name, 
                 desc: "Fine-grained metamorphic natural slate offering split surfaces.", 
-                img: `https://images.unsplash.com/photo-${1600585154340 + (idx % 3)}-be6161a56a0c?auto=format&fit=crop&w=800&q=85`
+                img: `https://images.unsplash.com/photo-\${1600585154340 + (idx % 3)}-be6161a56a0c?auto=format&fit=crop&w=800&q=85`
             }))
         };
 
@@ -281,203 +367,13 @@
             list.forEach(item => {
                 const card = `
                     <div class="bg-[#17261E] border border-[#23382E] rounded overflow-hidden flex flex-col justify-between group/card hover:border-[#D4AF37] transition duration-300 shadow-md">
-                        <div class="overflow-hidden relative h-48">
-                            <img src="${item.img}" alt="${item.name}" class="w-full h-full object-cover group-hover/card:scale-110 transition duration-500 ease-out">
+                        <div class="overflow-hidden relative h-48 bg-stone-900">
+                            <img src="${item.img}" alt="${item.name}" class="w-full h-full object-cover group-hover/card:scale-110 transition duration-500 ease-out" onerror="this.src='https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=85'">
                         </div>
                         <div class="p-4 flex flex-col flex-grow justify-between bg-[#17261E]">
                             <div>
-                                <h4 class="font-medium text-[#D4AF37] mb-1 group-hover/card:text-white transition">${item.name}</h4>
-                                <p class="text-stone-300 text-xs leading-relaxed mb-4">${item.desc}</p>
+                                <h4 class="font-medium text-[#D4AF37] mb-1 group-hover/card:text-white transition">\${item.name}</h4>
+                                <p class="text-stone-300 text-xs leading-relaxed mb-4">\${item.desc}</p>
                             </div>
-                            <a href="#contact" onclick="closeCategoryModal()" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline flex items-center">Inquire Stone <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-                        </div>
-                    </div>
-                `;
-                modalGrid.innerHTML += card;
-            });
-
-            document.getElementById('masterModal').style.display = 'flex';
-        }
-
-        function closeCategoryModal() {
-            document.getElementById('masterModal').style.display = 'none';
-        }
-    </script>
-
-    <!-- Our Approach Section -->
-    <section id="approach" class="bg-[#111C16] text-[#F7F5F0] py-24 border-t border-[#23382E]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest block mb-2">Our Approach</span>
-                <h2 class="text-3xl font-light tracking-tight mb-4">FROM ORDER TO SHIPMENT</h2>
-                <p class="text-stone-300 text-sm leading-relaxed">
-                    Every order is handled with care, precision and attention to detail — from the moment we receive your requirements until the material is prepared and dispatched.
-                </p>
-            </div>
-
-            <!-- Video Player with Direct Fallback Link for Guaranteed Playback -->
-            <div class="max-w-4xl mx-auto mb-8 rounded-lg overflow-hidden border border-[#23382E] shadow-2xl bg-black">
-                <video controls preload="auto" class="w-full h-auto object-cover max-h-[550px]">
-                    <source src="approach_2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            
-            <div class="text-center mb-16">
-                <a href="approach_2.mp4" target="_blank" class="inline-block bg-[#D4AF37] text-[#111C16] font-semibold text-xs uppercase tracking-widest px-6 py-3 rounded hover:bg-[#c5a030] transition">
-                    <i class="fa-solid fa-expand mr-2"></i> Open Video in Full Screen / Separate Page
-                </a>
-            </div>
-
-            <!-- Approach Steps Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E]">
-                    <span class="text-[#D4AF37] text-2xl font-light block mb-4">01</span>
-                    <h4 class="font-medium text-lg mb-2">Understand Your Requirements</h4>
-                    <p class="text-stone-300 text-xs leading-relaxed">We begin by understanding the exact requirements of the order — whether you need blocks, slabs, tiles or cut-to-size material. Quantity, dimensions, thickness, finish, grade, packing requirements and delivery destination are carefully reviewed before production begins.</p>
-                </div>
-
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E]">
-                    <span class="text-[#D4AF37] text-2xl font-light block mb-4">02</span>
-                    <h4 class="font-medium text-lg mb-2">Select & Process</h4>
-                    <p class="text-stone-300 text-xs leading-relaxed">Once the order is confirmed, the appropriate material is selected and processed according to the agreed specifications. Depending on the requirement, the stone may be prepared as a <strong class="text-[#D4AF37]">raw block, finished slab, tile or customised cut-to-size piece</strong>.</p>
-                </div>
-
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E]">
-                    <span class="text-[#D4AF37] text-2xl font-light block mb-4">03</span>
-                    <h4 class="font-medium text-lg mb-2">Quality Inspection</h4>
-                    <p class="text-stone-300 text-xs leading-relaxed mb-3">Before packing, every order undergoes a detailed quality inspection by our team. We personally inspect the material for:
-                    <ul class="list-disc pl-4 space-y-1 mt-2 text-stone-300">
-                        <li>Colour and natural variation</li>
-                        <li>Veining and overall appearance</li>
-                        <li>Dimensions and thickness</li>
-                        <li>Surface finish</li>
-                        <li>Visible cracks, chips or defects</li>
-                        <li>Quantity and order specifications</li>
-                    </ul>
-                    We do not dispatch material until it has been inspected and approved by our team.</p>
-                </div>
-
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E]">
-                    <span class="text-[#D4AF37] text-2xl font-light block mb-4">04</span>
-                    <h4 class="font-medium text-lg mb-2">Careful Packing & Preparation</h4>
-                    <p class="text-stone-300 text-xs leading-relaxed">After final inspection, the material is carefully prepared for transportation. Packing and loading are carried out with the nature, size and format of the material in mind to help ensure safe handling during transit.</p>
-                </div>
-
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E]">
-                    <span class="text-[#D4AF37] text-2xl font-light block mb-4">05</span>
-                    <h4 class="font-medium text-lg mb-2">Final Verification Before Dispatch</h4>
-                    <p class="text-stone-300 text-xs leading-relaxed">Before the shipment leaves our facility, we conduct a final verification of the material, quantity, packing and shipping documentation. Our objective is simple: <strong class="text-[#D4AF37]">what leaves our facility should match what was approved for the order</strong>.</p>
-                </div>
-
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E]">
-                    <span class="text-[#D4AF37] text-2xl font-light block mb-4">06</span>
-                    <h4 class="font-medium text-lg mb-2">Dispatch & Shipment</h4>
-                    <p class="text-stone-300 text-xs leading-relaxed">Once everything has been checked and approved, the shipment is dispatched to the buyer's designated destination through the agreed logistics arrangement. From blocks and slabs to tiles and customised pieces, we maintain the same attention to quality throughout the process.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Process Video & Parallel Process Section -->
-    <section id="process" class="bg-[#111C16] text-[#F7F5F0] py-24 border-t border-[#23382E]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest block mb-2">Manufacturing & Production</span>
-                <h2 class="text-3xl font-light tracking-tight mb-4">Marble Manufacturing Process: From Block to Tile</h2>
-            </div>
-
-            <!-- Parallel Layout: Video on one side, Process Steps on the other -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <!-- Video Column -->
-                <div class="sticky top-28 rounded-lg overflow-hidden border border-[#23382E] shadow-2xl bg-black">
-                    <video controls preload="auto" class="w-full h-auto object-cover">
-                        <source src="process.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <!-- Process Steps Column -->
-                <div class="space-y-6">
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">01. Quarrying & Block Extraction</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">Premium-quality marble is extracted from natural quarries using advanced cutting techniques. Large marble blocks are carefully selected based on their color, veining, and structural quality.</p>
-                    </div>
-
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">02. Block Cutting</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">The selected marble blocks are transported to the processing facility, where advanced gang saws or block-cutting machines cut them into slabs of the required thickness.</p>
-                    </div>
-
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">03. Slab Processing & Polishing</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">The slabs undergo surface calibration, resin treatment when required, and progressive polishing to enhance their natural patterns, smoothness, and finish.</p>
-                    </div>
-
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">04. Tile Cutting & Sizing</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">Processed marble slabs are cut into tiles of specified dimensions using precision cutting machines. Edges and thickness are checked to meet the required project specifications.</p>
-                    </div>
-
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">05. Quality Inspection</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">Each tile is inspected for surface finish, dimensions, edge quality, and visible defects. Tiles are sorted according to their shade, pattern, and quality grade.</p>
-                    </div>
-
-                    <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
-                        <h4 class="text-[#D4AF37] font-medium text-base mb-2">06. Packaging & Export</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">The finished tiles are carefully packed in protective materials and sturdy wooden crates, ready for secure transportation and international delivery.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-[#EBE7DF] py-24 border-t border-stone-300">
-        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest block mb-2">Get In Touch</span>
-                <h2 class="text-3xl font-light text-[#111C16] tracking-tight mb-4">LET'S FIND THE RIGHT STONE FOR YOUR PROJECT</h2>
-                <p class="text-stone-700 text-sm leading-relaxed mb-8">Tell us what you are looking for — material, colour, thickness, quantity, application or required dimensions.</p>
-                <div class="space-y-3 text-sm text-stone-800">
-                    <p><i class="fa-solid fa-envelope mr-3 text-[#111C16]"></i> <a href="mailto:petragstones@gmail.com" class="hover:underline">petragstones@gmail.com</a></p>
-                    <p><i class="fa-solid fa-phone mr-3 text-[#111C16]"></i> <a href="tel:+919166995853" class="hover:underline">+91 9166995853</a></p>
-                    <p><i class="fa-brands fa-whatsapp mr-3 text-green-600"></i> <a href="https://wa.me/919166995853" target="_blank" class="hover:underline font-medium">Chat on WhatsApp</a></p>
-                    <p><i class="fa-solid fa-location-dot mr-3 text-[#111C16]"></i> Jaipur, Rajasthan, India</p>
-                </div>
-            </div>
-            <div class="bg-[#F7F5F0] p-8 border border-stone-300 shadow-sm">
-                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
-                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Your Name / Company</label>
-                        <input type="text" name="name" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Email Address</label>
-                        <input type="email" name="email" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Project Details & Requirements</label>
-                        <textarea name="message" rows="4" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]" placeholder="Mention material required, colour, quantity, and delivery port..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-[#111C16] hover:bg-[#1a2d23] text-[#F7F5F0] font-medium py-3.5 text-xs uppercase tracking-widest transition">Request a Quotation</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer & Social Links -->
-    <footer class="bg-[#0b130f] text-stone-400 py-12 text-center text-xs tracking-widest uppercase border-t border-[#17261E]">
-        <p class="mb-4 text-[#D4AF37] font-light text-sm tracking-[0.2em]">NATURAL STONE. DISTINCTIVE SPACES.</p>
-        <div class="flex justify-center space-x-6 mb-6">
-            <a href="https://www.instagram.com/petragstones?stkn=MWZsNHd6cmd6ZHhydA==" target="_blank" class="text-stone-300 hover:text-[#D4AF37] text-lg transition"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/share/1J9FymGec3/" target="_blank" class="text-stone-300 hover:text-[#D4AF37] text-lg transition"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://wa.me/919166995853" target="_blank" class="text-stone-300 hover:text-green-400 text-lg transition"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-        <p>&copy; 2026 PETRA G STONES (Founder: Manish Singh). All Rights Reserved. Jaipur, India.</p>
-    </footer>
-
-</body>
-</html>
+                            <a href="#contact" onclick="closeCategoryModal()" class="text-xs uppercase tracking-
+                            

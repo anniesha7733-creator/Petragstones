@@ -171,17 +171,17 @@
         </div>
     </section>
 
-    <!-- ================= MODALS FOR ALL 8 CATEGORIES ================= -->
+    <!-- ================= MODALS FOR ALL 8 CATEGORIES (DISPLAY STYLE FIX) ================= -->
 
     <!-- 1. Granite Modal -->
-    <div id="graniteModal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4">
+    <div id="graniteModal" style="display: none;" class="fixed inset-0 bg-black/80 z-50 items-center justify-center p-4">
         <div class="bg-[#111C16] border border-[#D4AF37] max-w-6xl w-full max-h-[90vh] overflow-y-auto rounded-lg p-6 text-[#F7F5F0]">
             <div class="flex justify-between items-center border-b border-[#23382E] pb-4 mb-6">
                 <div>
                     <span class="text-[#D4AF37] text-xs uppercase tracking-widest font-semibold">Petra G Stones Collection</span>
                     <h2 class="text-2xl font-light text-white tracking-wide">Granite Varieties (94 Options)</h2>
                 </div>
-                <button onclick="closeModal('graniteModal')" class="text-stone-400 hover:text-white text-2xl font-bold px-3 py-1">&times;</button>
+                <button onclick="closeModal('graniteModal')" class="text-stone-400 hover:text-white text-2xl font-bold px-3 py-1 cursor-pointer">&times;</button>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <div class="bg-[#17261E] border border-[#23382E] rounded overflow-hidden">
@@ -212,14 +212,14 @@
     </div>
 
     <!-- 2. Marble Modal -->
-    <div id="marbleModal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4">
+    <div id="marbleModal" style="display: none;" class="fixed inset-0 bg-black/80 z-50 items-center justify-center p-4">
         <div class="bg-[#111C16] border border-[#D4AF37] max-w-6xl w-full max-h-[90vh] overflow-y-auto rounded-lg p-6 text-[#F7F5F0]">
             <div class="flex justify-between items-center border-b border-[#23382E] pb-4 mb-6">
                 <div>
                     <span class="text-[#D4AF37] text-xs uppercase tracking-widest font-semibold">Petra G Stones Collection</span>
                     <h2 class="text-2xl font-light text-white tracking-wide">Marble Varieties (24 Options)</h2>
                 </div>
-                <button onclick="closeModal('marbleModal')" class="text-stone-400 hover:text-white text-2xl font-bold px-3 py-1">&times;</button>
+                <button onclick="closeModal('marbleModal')" class="text-stone-400 hover:text-white text-2xl font-bold px-3 py-1 cursor-pointer">&times;</button>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <div class="bg-[#17261E] border border-[#23382E] rounded overflow-hidden">
@@ -241,4 +241,264 @@
                 <div class="bg-[#17261E] border border-[#23382E] rounded p-6 flex flex-col justify-between">
                     <div>
                         <h4 class="font-medium text-[#D4AF37] mb-2">+ 22 More Marble Varieties</h4>
-                        <p class="text-stone
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Includes Botticino, Crema Marfil, Emperador, Banswara White, Makrana, and Travertine.</p>
+                    </div>
+                    <a href="#contact" onclick="closeModal('marbleModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Request Full Catalog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Wall Cladding Modal -->
+    <div id="claddingModal" style="display: none;" class="fixed inset-0 bg-black/80 z-50 items-center justify-center p-4">
+        <div class="bg-[#111C16] border border-[#D4AF37] max-w-6xl w-full max-h-[90vh] overflow-y-auto rounded-lg p-6 text-[#F7F5F0]">
+            <div class="flex justify-between items-center border-b border-[#23382E] pb-4 mb-6">
+                <div>
+                    <span class="text-[#D4AF37] text-xs uppercase tracking-widest font-semibold">Petra G Stones Collection</span>
+                    <h2 class="text-2xl font-light text-white tracking-wide">Wall Cladding Varieties (44 Options)</h2>
+                </div>
+                <button onclick="closeModal('claddingModal')" class="text-stone-400 hover:text-white text-2xl font-bold px-3 py-1 cursor-pointer">&times;</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-[#17261E] border border-[#23382E] rounded overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Stacked Slate" class="h-48 w-full object-cover">
+                    <div class="p-4">
+                        <h4 class="font-medium text-[#D4AF37] mb-1">Stacked Slate Cladding</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Natural multi-color slate strips interlocked for striking feature walls and pillar designs.</p>
+                        <a href="#contact" onclick="closeModal('claddingModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Inquire Stone &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-[#17261E] border border-[#23382E] rounded p-6 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-medium text-[#D4AF37] mb-2">+ 43 More Cladding Varieties</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Includes Quartz stone panels, 3D textured tiles, rustic ledger panels, and sandstone ledges.</p>
+                    </div>
+                    <a href="#contact" onclick="closeModal('claddingModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Request Full Catalog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Porcelain Modal -->
+    <div id="porcelainModal" style="display: none;" class="fixed inset-0 bg-black/80 z-50 items-center justify-center p-4">
+        <div class="bg-[#111C16] border border-[#D4AF37] max-w-6xl w-full max-h-[90vh] overflow-y-auto rounded-lg p-6 text-[#F7F5F0]">
+            <div class="flex justify-between items-center border-b border-[#23382E] pb-4 mb-6">
+                <div>
+                    <span class="text-[#D4AF37] text-xs uppercase tracking-widest font-semibold">Petra G Stones Collection</span>
+                    <h2 class="text-2xl font-light text-white tracking-wide">Porcelain Varieties (42 Options)</h2>
+                </div>
+                <button onclick="closeModal('porcelainModal')" class="text-stone-400 hover:text-white text-2xl font-bold px-3 py-1 cursor-pointer">&times;</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-[#17261E] border border-[#23382E] rounded overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=80" alt="Large Format Slab" class="h-48 w-full object-cover">
+                    <div class="p-4">
+                        <h4 class="font-medium text-[#D4AF37] mb-1">Ultra-White Large Format</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">High-density wide-format porcelain slab engineered for seamless modern flooring.</p>
+                        <a href="#contact" onclick="closeModal('porcelainModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Inquire Stone &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-[#17261E] border border-[#23382E] rounded p-6 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-medium text-[#D4AF37] mb-2">+ 41 More Porcelain Options</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Includes Matte finish, Glossy marble-look slabs, Wood-finish tiles, and outdoor anti-skid pavers.</p>
+                    </div>
+                    <a href="#contact" onclick="closeModal('porcelainModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Request Full Catalog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Quartzite Modal -->
+    <div id="quartziteModal" style="display: none;" class="fixed inset-0 bg-black/80 z-50 items-center justify-center p-4">
+        <div class="bg-[#111C16] border border-[#D4AF37] max-w-6xl w-full max-h-[90vh] overflow-y-auto rounded-lg p-6 text-[#F7F5F0]">
+            <div class="flex justify-between items-center border-b border-[#23382E] pb-4 mb-6">
+                <div>
+                    <span class="text-[#D4AF37] text-xs uppercase tracking-widest font-semibold">Petra G Stones Collection</span>
+                    <h2 class="text-2xl font-light text-white tracking-wide">Quartzite Varieties (15 Options)</h2>
+                </div>
+                <button onclick="closeModal('quartziteModal')" class="text-stone-400 hover:text-white text-2xl font-bold px-3 py-1 cursor-pointer">&times;</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-[#17261E] border border-[#23382E] rounded overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Taj Mahal Quartzite" class="h-48 w-full object-cover">
+                    <div class="p-4">
+                        <h4 class="font-medium text-[#D4AF37] mb-1">Taj Mahal Quartzite</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Soft creamy background with subtle gold and brown veining. Extreme durability.</p>
+                        <a href="#contact" onclick="closeModal('quartziteModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Inquire Stone &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-[#17261E] border border-[#23382E] rounded p-6 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-medium text-[#D4AF37] mb-2">+ 14 More Quartzite Options</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Includes Macaubas, Blue Roma, Perla Venata, and exotic Brazilian selections.</p>
+                    </div>
+                    <a href="#contact" onclick="closeModal('quartziteModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Request Full Catalog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. Sandstone Modal -->
+    <div id="sandstoneModal" style="display: none;" class="fixed inset-0 bg-black/80 z-50 items-center justify-center p-4">
+        <div class="bg-[#111C16] border border-[#D4AF37] max-w-6xl w-full max-h-[90vh] overflow-y-auto rounded-lg p-6 text-[#F7F5F0]">
+            <div class="flex justify-between items-center border-b border-[#23382E] pb-4 mb-6">
+                <div>
+                    <span class="text-[#D4AF37] text-xs uppercase tracking-widest font-semibold">Petra G Stones Collection</span>
+                    <h2 class="text-2xl font-light text-white tracking-wide">Sandstone Varieties (12 Options)</h2>
+                </div>
+                <button onclick="closeModal('sandstoneModal')" class="text-stone-400 hover:text-white text-2xl font-bold px-3 py-1 cursor-pointer">&times;</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-[#17261E] border border-[#23382E] rounded overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=600&q=80" alt="Teakwood Sandstone" class="h-48 w-full object-cover">
+                    <div class="p-4">
+                        <h4 class="font-medium text-[#D4AF37] mb-1">Teakwood Sandstone</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Distinctive wood-like grain patterns in warm beige and brown tones.</p>
+                        <a href="#contact" onclick="closeModal('sandstoneModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Inquire Stone &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-[#17261E] border border-[#23382E] rounded p-6 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-medium text-[#D4AF37] mb-2">+ 11 More Sandstone Options</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Includes Kandla Grey, Rainbow, Mint, and Desert Yellow for landscape paving.</p>
+                    </div>
+                    <a href="#contact" onclick="closeModal('sandstoneModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Request Full Catalog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Limestone Modal -->
+    <div id="limestoneModal" style="display: none;" class="fixed inset-0 bg-black/80 z-50 items-center justify-center p-4">
+        <div class="bg-[#111C16] border border-[#D4AF37] max-w-6xl w-full max-h-[90vh] overflow-y-auto rounded-lg p-6 text-[#F7F5F0]">
+            <div class="flex justify-between items-center border-b border-[#23382E] pb-4 mb-6">
+                <div>
+                    <span class="text-[#D4AF37] text-xs uppercase tracking-widest font-semibold">Petra G Stones Collection</span>
+                    <h2 class="text-2xl font-light text-white tracking-wide">Limestone Varieties (7 Options)</h2>
+                </div>
+                <button onclick="closeModal('limestoneModal')" class="text-stone-400 hover:text-white text-2xl font-bold px-3 py-1 cursor-pointer">&times;</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-[#17261E] border border-[#23382E] rounded overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Kota Stone" class="h-48 w-full object-cover">
+                    <div class="p-4">
+                        <h4 class="font-medium text-[#D4AF37] mb-1">Kota Blue Limestone</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Fine-grained sedimentary limestone with natural blue-grey hues for durable flooring.</p>
+                        <a href="#contact" onclick="closeModal('limestoneModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Inquire Stone &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-[#17261E] border border-[#23382E] rounded p-6 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-medium text-[#D4AF37] mb-2">+ 6 More Limestone Options</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Includes French limestone, Kadappa black, and Jura beige finishes.</p>
+                    </div>
+                    <a href="#contact" onclick="closeModal('limestoneModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Request Full Catalog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. Slate Modal -->
+    <div id="slateModal" style="display: none;" class="fixed inset-0 bg-black/80 z-50 items-center justify-center p-4">
+        <div class="bg-[#111C16] border border-[#D4AF37] max-w-6xl w-full max-h-[90vh] overflow-y-auto rounded-lg p-6 text-[#F7F5F0]">
+            <div class="flex justify-between items-center border-b border-[#23382E] pb-4 mb-6">
+                <div>
+                    <span class="text-[#D4AF37] text-xs uppercase tracking-widest font-semibold">Petra G Stones Collection</span>
+                    <h2 class="text-2xl font-light text-white tracking-wide">Slate Varieties (5 Options)</h2>
+                </div>
+                <button onclick="closeModal('slateModal')" class="text-stone-400 hover:text-white text-2xl font-bold px-3 py-1 cursor-pointer">&times;</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-[#17261E] border border-[#23382E] rounded overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Copper Slate" class="h-48 w-full object-cover">
+                    <div class="p-4">
+                        <h4 class="font-medium text-[#D4AF37] mb-1">Copper Slate</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Vibrant multi-colored natural slate with copper, rust and grey highlights.</p>
+                        <a href="#contact" onclick="closeModal('slateModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Inquire Stone &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-[#17261E] border border-[#23382E] rounded p-6 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-medium text-[#D4AF37] mb-2">+ 4 More Slate Options</h4>
+                        <p class="text-stone-300 text-xs leading-relaxed mb-4">Includes Black slate, Silver shine, and Multi-green split face tiles.</p>
+                    </div>
+                    <a href="#contact" onclick="closeModal('slateModal')" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold hover:underline">Request Full Catalog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Universal JavaScript for Modals (Display Toggle Fix) -->
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+    </script>
+
+    <!-- Our Process & Quarry Video Section -->
+    <section id="process" class="bg-[#111C16] text-[#F7F5F0] py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest block mb-2">From Quarry to Finished Surface</span>
+                <h2 class="text-3xl font-light tracking-tight">Our Precision Process & Quality Inspection</h2>
+            </div>
+            <!-- Video Player -->
+            <div class="max-w-4xl mx-auto mb-16 rounded-lg overflow-hidden border border-[#23382E] shadow-2xl bg-black">
+                <video controls autoplay muted loop playsinline class="w-full h-auto object-cover max-h-[550px]">
+                    <source src="process.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#EBE7DF] py-24 border-t border-stone-300">
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest block mb-2">Get In Touch</span>
+                <h2 class="text-3xl font-light text-[#111C16] tracking-tight mb-4">LET'S FIND THE RIGHT STONE FOR YOUR PROJECT</h2>
+                <p class="text-stone-700 text-sm leading-relaxed mb-8">Tell us what you are looking for — material, colour, thickness, quantity, application or required dimensions.</p>
+                <div class="space-y-3 text-sm text-stone-800">
+                    <p><i class="fa-solid fa-envelope mr-3 text-[#111C16]"></i> petragstones@gmail.com</p>
+                    <p><i class="fa-solid fa-phone mr-3 text-[#111C16]"></i> +91 9166995853</p>
+                    <p><i class="fa-solid fa-location-dot mr-3 text-[#111C16]"></i> Jaipur, Rajasthan, India</p>
+                </div>
+            </div>
+            <div class="bg-[#F7F5F0] p-8 border border-stone-300 shadow-sm">
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Your Name / Company</label>
+                        <input type="text" name="name" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Email Address</label>
+                        <input type="email" name="email" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1">Project Details & Requirements</label>
+                        <textarea name="message" rows="4" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]" placeholder="Mention material required, colour, quantity, and delivery port..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-[#111C16] hover:bg-[#1a2d23] text-[#F7F5F0] font-medium py-3.5 text-xs uppercase tracking-widest transition">Request a Quotation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Social Links -->
+    <footer class="bg-[#0b130f] text-stone-400 py-12 text-center text-xs tracking-widest uppercase border-t border-[#17261E]">
+        <p class="mb-4 text-[#D4AF37] font-light text-sm tracking-[0.2em]">NATURAL STONE. DISTINCTIVE SPACES.</p>
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="https://www.instagram.com/petragstones?stkn=MWZsNHd6cmd6ZHhydA==" target="_blank" class="text-stone-300 hover:text-[#D4AF37] text-lg transition"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1J9FymGec3/" target="_blank" class="text-stone-300 hover:text-[#D4AF37] text-lg transition"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2026 PETRA G STONES (Founder: Manish Singh). All Rights Reserved. Jaipur, India.</p>
+    </footer>
+
+</body>
+</html>

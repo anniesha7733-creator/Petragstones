@@ -236,12 +236,43 @@
         const stoneData = {
             granite: [
                 "Alaska Gold Granite (SS)", "Blue Flower Granite", "Alpine Forest Granite", "Antique Silver Granite", "Arizona Gold Granite", "Autumn Sky Granite", "Autumn Sky Brown Granite", "Azul Novae Granite", "Bianco Typhoon Granite", "Black Fantasy Granite", "Blue Dunes Granite (FST)", "Blue Dunes Granite (SBM)", "Blue Wave Granite", "Chocolate Brown Granite", "Cosmos Black Granite", "Cosmos Gold Granite (RBG)", "Cosmos Gold Granite (SKM)", "Desert Brown Granite", "Donna Grey Granite", "Elegant Grey Granite", "Glacier White Granite", "Havana Blue Granite", "Indian Nero Marince Granite", "Merphil Granite", "Oyster Blue Granite", "Platinum White Granite", "Silver Falls Granite", "Volcanic White Granite", "Web Grey Granite", "White Exotic Granite", "White Glimmer Granite", "White Knight Granite", "White Mist Granite", "Absolute Black Granite", "Alaska Blue Flower Granite", "Antico Bianco Granite", "Apple Green Granite", "Azul White Granite", "Baltic Brown Granite", "Black Forest Granite", "Black Galaxy Granite", "Black Markino Granite", "Black Pearl Granite", "Chima Pink Granite", "Classic Paradiso Granite", "Colonial Cream Granite", "Colonial Gold Granite", "Colonial White Granite", "Cotton White Granite", "Crystal Blue Granite", "Crystal Yellow Granite", "Desert Gold Granite", "Exotic Brown Granite", "Far East Granite", "Fish Black Granite", "Forest Black Granite", "French Green Granite", "Ghiblee Gold Granite", "Golden Canyon Granite", "Hassan Green Granite", "Himalayan Blue Granite", "Honey Blue Granite", "Ice Blue Granite", "Ice White Granite", "Icon Brown Granite", "Imperial Gold Granite", "Imperial Red Granite", "Imperial White Granite", "Indian Juparana Granite", "Ivory Brown Granite", "Jeerawal White Granite", "Jhansi Red Granite", "Juparana Colombo Granite", "Kashmir White Granite", "Kuppam Green Granite", "Lavender Blue Granite", "Magic Black Granite", "Merry Gold Granite", "Milky White Granite", "Monte Cristo Granite", "Moon White Granite", "New Viscon White Granite", "P White Granite", "Panther Black Granite", "Paradiso Bash Granite", "Raw Silk Ivory Granite", "Rosy Pink Granite", "Royal Cream Granite", "Ruby Red Granite", "Steel Grey Granite", "Tan Brown Granite", "Viscon White Granite", "Vizag Blue Granite", "Whisper White Granite"
-            ].map((name, idx) => ({
-                name: name, 
-                shortDesc: "Export grade premium natural granite surface with exceptional structural durability.",
-                desc: `${name} is a premier grade natural granite directly extracted from exclusive quarry reserves in India. Celebrated for its unique mineral patterns, structural integrity, and high durability, this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab undergoes strict thickness calibration tolerance in standard 20mm and 30mm profiles, polished to a mirror finish.`,
-                img: `https://images.unsplash.com/photo-${1600585154340 + (idx % 15)}-be6161a56a0c?auto=format&fit=crop&w=800&q=85`
-            })),
+            ].map((name, idx) => {
+                let imgFile = "";
+                if (name === "Alaska Gold Granite (SS)") imgFile = "ALASKA GOLD - SS.JPG";
+                else if (name === "Blue Flower Granite") imgFile = "Blue Flower Granite.JPG";
+                else if (name === "Alpine Forest Granite") imgFile = "ALPINE FOREST AQ.JPG";
+                else if (name === "Antique Silver Granite") imgFile = "ANTIQUE SILVER - FSJ.JPG";
+                else if (name === "Arizona Gold Granite") imgFile = "ARIZONA GOLD DKM.JPG";
+                else if (name === "Autumn Sky Granite") imgFile = "AUTUMN SKY - YS.JPG";
+                else if (name === "Autumn Sky Brown Granite") imgFile = "AUTUMN SKY BROWN - YS.JPG";
+                else if (name === "Azul Novae Granite") imgFile = "AZUL NOVAE.jpg";
+                else if (name === "Bianco Typhoon Granite") imgFile = "BIANCO TYPHOON TG.JPG";
+                else if (name === "Black Fantasy Granite") imgFile = "BLACK FANTASY BS.JPG";
+                else if (name === "Blue Dunes Granite (FST)") imgFile = "BLUE DUNES - FST.JPG";
+                else if (name === "Blue Dunes Granite (SBM)") imgFile = "BLUE DUNES - SBM.JPG";
+                else if (name === "Blue Wave Granite") imgFile = "BLUE WAVE - BWS.JPG";
+                else if (name === "Chocolate Brown Granite") imgFile = "CHOCOLATE BROWN - NG.JPG";
+                else if (name === "Cosmos Black Granite") imgFile = "COSMOS BLACK MT.JPG";
+                else if (name === "Cosmos Gold Granite (RBG)") imgFile = "COSMOS GOLD RBG.JPG";
+                else if (name === "Cosmos Gold Granite (SKM)") imgFile = "COSMOS GOLD SKM.JPG";
+                else if (name === "Desert Brown Granite") imgFile = "DESERT BROWN - SG.JPG";
+                else if (name === "Donna Grey Granite") imgFile = "DONNA GREY - AML.JPG";
+                else if (name === "Elegant Grey Granite") imgFile = "ELEGANT GREY CM.JPG";
+                else if (name === "Glacier White Granite") imgFile = "GLACIER WHITE ES.JPG";
+                else if (name === "Havana Blue Granite") imgFile = "HAVANA BLUE RSI.JPG";
+                else if (name === "Indian Nero Marince Granite") imgFile = "INDIAN NERO MARINCE - PSL.JPG";
+                else if (name === "Merphil Granite") imgFile = "MERPHIL - AML.JPG";
+                else if (name === "Oyster Blue Granite") imgFile = "OYSTER BLUE FSJ.JPG";
+                else if (name === "Platinum White Granite") imgFile = "PLATINUM WHITE - SRG.JPG";
+                else imgFile = `https://images.unsplash.com/photo-${1600585154340 + (idx % 15)}-be6161a56a0c?auto=format&fit=crop&w=800&q=85`;
+
+                return {
+                    name: name,
+                    shortDesc: "Export grade premium natural granite surface with exceptional structural durability.",
+                    desc: `${name} is a premier grade natural granite directly extracted from exclusive quarry reserves in India. Celebrated for its unique mineral patterns, structural integrity, and high durability, this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab undergoes strict thickness calibration tolerance in standard 20mm and 30mm profiles, polished to a mirror finish.`,
+                    img: imgFile
+                };
+            }),
 
             marble: [
                 {

@@ -75,7 +75,7 @@
             <span class="text-[#D4AF37] text-xs uppercase tracking-[0.3em] block mb-4 font-medium">Natural Stone • Architectural Surfaces</span>
             <h1 class="text-4xl md:text-6xl font-light tracking-tight mb-6 leading-tight">STONE, SELECTED WITH PURPOSE.</h1>
             <p class="text-stone-300 text-base md:text-lg font-light max-w-2xl mx-auto mb-10 leading-relaxed">
-                At PETRA G STONES, we bring together carefully selected natural and engineered surfaces for residential, commercial and architectural projects worldwide.
+                At PETRA G STONES, founded by Manish Singh, we bring together carefully selected natural and engineered surfaces for residential, commercial and architectural projects worldwide.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#collections" class="bg-[#D4AF37] hover:bg-[#c5a030] text-[#111C16] font-medium px-8 py-3.5 text-xs uppercase tracking-widest transition text-center">Explore Collection</a>
@@ -98,11 +98,11 @@
                     <div>
                         <div class="flex justify-between items-center mb-3">
                             <h3 class="text-xl font-medium text-[#D4AF37] tracking-wide">GRANITE</h3>
-                            <span class="bg-[#D4AF37]/20 text-[#D4AF37] text-xs px-2.5 py-1 rounded-full font-semibold">27 Varieties</span>
+                            <span class="bg-[#D4AF37]/20 text-[#D4AF37] text-xs px-2.5 py-1 rounded-full font-semibold">94 Varieties</span>
                         </div>
                         <p class="text-stone-300 text-sm leading-relaxed mb-6">Exceptional strength and distinctive mineral patterns for architectural spaces.</p>
                     </div>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37] flex items-center">View All 27 Varieties <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i></span>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37] flex items-center">View All 94 Varieties <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i></span>
                 </div>
 
                 <div class="bg-[#17261E] p-8 border border-[#23382E] shadow-sm flex flex-col justify-between cursor-pointer hover:border-[#D4AF37] transition group" onclick="openCategoryModal('marble')">
@@ -243,7 +243,7 @@
                 },
                 {
                     name: "Blue Flower Granite",
-                    shortDesc: "Export grade premium natural granite surface with exceptional structural durability.",
+                    shortDesc: "Blue Flower Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance.",
                     desc: "Blue Flower Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
                     img: "Blue Flower Granite.JPG"
                 },
@@ -327,8 +327,8 @@
                 },
                 {
                     name: "Cosmos Gold Granite (RBG)",
-                    shortDesc: "Export grade premium natural granite surface with exceptional structural durability.",
-                    desc: "Cosmos Gold Granite (RBG) is a premier grade natural granite directly extracted from exclusive quarry reserves in India.",
+                    shortDesc: "Cosmos Gold Granite (RBG) is a premier grade natural granite directly extracted from exclusive quarry reserves in India.",
+                    desc: "Cosmos Gold Granite (RBG) is a premier grade natural granite directly extracted from exclusive quarry reserves in India. Celebrated for its unique veining and high durability.",
                     img: "COSMOS GOLD RBG.JPG"
                 },
                 {
@@ -390,7 +390,15 @@
                     shortDesc: "Platinum White Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     desc: "Platinum White Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.68 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Platinum White Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
                     img: "PLATINUM WHITE - SRG.JPG"
-                }
+                },
+                ...[
+                    "Silver Falls Granite", "Volcanic White Granite", "Web Grey Granite", "White Exotic Granite", "White Glimmer Granite", "White Knight Granite", "White Mist Granite", "Absolute Black Granite", "Alaska Blue Flower Granite", "Antico Bianco Granite", "Apple Green Granite", "Azul White Granite", "Baltic Brown Granite", "Black Forest Granite", "Black Galaxy Granite", "Black Markino Granite", "Black Pearl Granite", "Chima Pink Granite", "Classic Paradiso Granite", "Colonial Cream Granite", "Colonial Gold Granite", "Colonial White Granite", "Cotton White Granite", "Crystal Blue Granite", "Crystal Yellow Granite", "Desert Gold Granite", "Exotic Brown Granite", "Far East Granite", "Fish Black Granite", "Forest Black Granite", "French Green Granite", "Ghiblee Gold Granite", "Golden Canyon Granite", "Hassan Green Granite", "Himalayan Blue Granite", "Honey Blue Granite", "Ice Blue Granite", "Ice White Granite", "Icon Brown Granite", "Imperial Gold Granite", "Imperial Red Granite", "Imperial White Granite", "Indian Juparana Granite", "Ivory Brown Granite", "Jeerawal White Granite", "Jhansi Red Granite", "Juparana Colombo Granite", "Kashmir White Granite", "Kuppam Green Granite", "Lavender Blue Granite", "Magic Black Granite", "Merry Gold Granite", "Milky White Granite", "Monte Cristo Granite", "Moon White Granite", "New Viscon White Granite", "P White Granite", "Panther Black Granite", "Paradiso Bash Granite", "Raw Silk Ivory Granite", "Rosy Pink Granite", "Royal Cream Granite", "Ruby Red Granite", "Steel Grey Granite", "Tan Brown Granite", "Viscon White Granite", "Vizag Blue Granite", "Whisper White Granite"
+                ].map((name, idx) => ({
+                    name: name,
+                    shortDesc: "Export grade premium natural granite surface with exceptional structural durability.",
+                    desc: `${name} is a premier grade natural granite directly extracted from exclusive quarry reserves in India. Celebrated for its unique mineral patterns, structural integrity, and high durability, this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab undergoes strict thickness calibration tolerance in standard 20mm and 30mm profiles, polished to a mirror finish.`,
+                    img: `https://images.unsplash.com/photo-${1600585154340 + (idx % 15)}-be6161a56a0c?auto=format&fit=crop&w=800&q=85`
+                }))
             ],
 
             marble: [
@@ -612,7 +620,15 @@
                     shortDesc: "Green Pearl Architectural Elevation Panel is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
                     desc: "Green Pearl Architectural Elevation Panel is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.76 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Green Pearl Architectural Elevation Panel undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
                     img: "GreenPearl.png"
-                }
+                },
+                ...[
+                    "MP Beige Natural Wall Cladding Panel", "MP Beige Textured Elevation Strip", "Matrix Pencil Line 3D Cladding", "Matrix Ribbed Architectural Cladding", "Matrix Grooved Elevation Panel", "Matrix Chiseled Wall Cladding", "Matrix Geometric 3D Panel", "Matrix Wave Textured Wall Cladding", "Matrix Classic 3D Elevation Cladding", "Mercury Brown 3D Wall Cladding", "Millennium Grey Interlocking Cladding Panel", "Millennium Grey Fluted Elevation Panel", "Millennium Grey Coral Finish Cladding", "Millennium Grey Textured Wall Cladding", "Olive Green Interlocking Elevation Strip", "Olive Green Textured Wall Cladding", "Onda White Wave 3D Wall Cladding", "Rajasthan Black Split Face Cladding", "Rajasthan White 3D Elevation Panel", "Rainforest Brown 3D Wall Cladding", "Rainforest Green Exotic Wall Cladding", "Red Pearl Architectural Elevation Panel", "Silicano Gold 3D Wall Cladding", "Star Galaxy Architectural Cladding Panel", "Toronto Grey Split Face Wall Cladding", "Toronto 5D Carved Architectural Panel", "Stacked Slate & Quartzite Elevation Strip (Pattern 1)", "Linear 3D Architectural Wall Cladding (Pattern 2)", "Split Face Natural Stone Wall Cladding (Pattern 3)", "Geometric Textured Elevation Panel (Pattern 4)", "Multi-Tonal Ledger Stone Wall Panel (Pattern 5)", "Rustic Multi-Slate 3D Cladding (Pattern 6)"
+                ].map((name, idx) => ({
+                    name: name,
+                    shortDesc: "Textured and stacked stone panels designed for architectural elevations.",
+                    desc: `${name} is crafted for exquisite architectural elevations and feature walls, offering superior durability and distinctive design aesthetics.`,
+                    img: `https://images.unsplash.com/photo-${1513694203232 + (idx % 4)}-719a280e022f?auto=format&fit=crop&w=800&q=85`
+                }))
             ],
 
             porcelain: [
@@ -1154,109 +1170,4 @@
 
                     <div class="bg-[#17261E] border border-[#23382E] p-6 rounded">
                         <h4 class="text-[#D4AF37] font-medium text-base mb-2">06. Packaging & Export</h4>
-                        <p class="text-stone-300 text-xs leading-relaxed">The finished tiles are carefully packed in protective materials and sturdy wooden crates, ready for secure transportation and international delivery.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact / Send Enquiry Section -->
-    <section id="contact" class="bg-[#EBE7DF] py-24 border-t border-stone-300">
-        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div>
-                <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest block mb-2">Get In Touch</span>
-                <h2 class="text-3xl font-light text-[#111C16] tracking-tight mb-4">LET'S FIND THE RIGHT STONE FOR YOUR PROJECT</h2>
-                <p class="text-stone-700 text-sm leading-relaxed mb-8">Tell us what you are looking for — material, colour, thickness, quantity, application or required dimensions.</p>
-                <div class="space-y-3 text-sm text-stone-800">
-                    <p><i class="fa-solid fa-envelope mr-3 text-[#111C16]"></i> <a href="mailto:petragstones@gmail.com" class="hover:underline">petragstones@gmail.com</a></p>
-                    <p><i class="fa-brands fa-whatsapp mr-3 text-green-600 text-base"></i> <a href="https://wa.me/919166995853" target="_blank" class="hover:underline font-medium">+91 9166995853 (WhatsApp Call Only)</a></p>
-                    <p><i class="fa-solid fa-location-dot mr-3 text-[#111C16]"></i> Jaipur, Rajasthan, India</p>
-                </div>
-            </div>
-
-            <div class="bg-[#F7F5F0] p-8 border border-stone-300 shadow-sm rounded-lg">
-                <div class="mb-6 border-b border-stone-300 pb-4">
-                    <span class="text-[#D4AF37] text-[10px] font-semibold uppercase tracking-[0.2em] block">Petra G Export Desk</span>
-                    <h3 class="text-xl font-light text-[#111C16] tracking-wide">Send Enquiry</h3>
-                    <p class="text-stone-600 text-xs mt-1">Our commercial team responds within 24 hours.</p>
-                </div>
-
-                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
-                    <!-- Configured Web3Forms Access Key -->
-                    <input type="hidden" name="access_key" value="915d6f03-c098-4938-847f-118d7dad37a8">
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-700 mb-1">Full Name *</label>
-                            <input type="text" name="name" required placeholder="John Smith" class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
-                        </div>
-                        <div>
-                            <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-700 mb-1">Company Name</label>
-                            <input type="text" name="company" placeholder="Luxury Interiors LLC" class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-700 mb-1">Email Address *</label>
-                            <input type="email" name="email" required placeholder="john@company.com" class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
-                        </div>
-                        <div>
-                            <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-700 mb-1">Phone / WhatsApp *</label>
-                            <input type="tel" name="phone" required placeholder="+1 212 555 0100" class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-700 mb-1">Country *</label>
-                            <input type="text" name="country" required placeholder="United States" class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
-                        </div>
-                        <div>
-                            <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-700 mb-1">Product Interest</label>
-                            <select name="product_interest" class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
-                                <option value="">Select a product...</option>
-                                <option value="Granite">Granite Slabs & Tiles</option>
-                                <option value="Marble">Marble Slabs & Tiles</option>
-                                <option value="Wall Cladding">Wall Cladding & Panels</option>
-                                <option value="Porcelain">Porcelain Slabs</option>
-                                <option value="Quartzite">Exotic Quartzite</option>
-                                <option value="Sandstone">Natural Sandstone</option>
-                                <option value="Limestone">Limestone</option>
-                                <option value="Slate">Natural Slate</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-700 mb-1">Estimated Quantity</label>
-                        <input type="text" name="quantity" placeholder="e.g. 1 FCL Container (~20 sqm slabs)" class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]">
-                    </div>
-
-                    <div>
-                        <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-700 mb-1">Message / Special Requirements</label>
-                        <textarea name="message" rows="3" required class="w-full border border-stone-300 bg-white p-3 text-sm focus:outline-none focus:border-[#111C16]" placeholder="Tell us about your project, thickness requirements, finish type (polished/honed), delivery port, etc."></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full bg-[#D4AF37] hover:bg-[#c5a030] text-[#111C16] font-semibold py-3.5 text-xs uppercase tracking-widest transition flex items-center justify-center">
-                        <i class="fa-solid fa-paper-plane mr-2"></i> Send Enquiry
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer & Social Links -->
-    <footer class="bg-[#0b130f] text-stone-400 py-12 text-center text-xs tracking-widest uppercase border-t border-[#17261E]">
-        <p class="mb-4 text-[#D4AF37] font-light text-sm tracking-[0.2em]">NATURAL STONE. DISTINCTIVE SPACES.</p>
-        <div class="flex justify-center space-x-6 mb-6">
-            <a href="https://www.instagram.com/petragstones?stkn=MWZsNHd6cmd6ZHhydA==" target="_blank" class="text-stone-300 hover:text-[#D4AF37] text-lg transition"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/share/1J9FymGec3/" target="_blank" class="text-stone-300 hover:text-[#D4AF37] text-lg transition"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://wa.me/919166995853" target="_blank" class="text-stone-300 hover:text-green-400 text-lg transition"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-        <p>&copy; 2026 PETRA G STONES (Founder: Manish Singh). All Rights Reserved. Jaipur, India.</p>
-    </footer>
-
-</body>
-</html>
+                        <p class="text-stone-300 text-xs leading-relaxed">The finished tiles are carefully packed in

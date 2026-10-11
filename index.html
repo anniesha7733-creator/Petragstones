@@ -10,25 +10,26 @@
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
 
-        /* Scroll Reveal Animation Styles */
-        @keyframes revealUp {
-            0% {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+        /* Repeatable Scroll Reveal Effects */
         .reveal-item {
             opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            transform: translateY(50px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .reveal-item.active {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        /* Approach section par thoda sa alag subtle scale aur slide effect */
+        .approach-reveal {
+            opacity: 0;
+            transform: translateY(35px) scale(0.98);
+            transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .approach-reveal.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
         }
     </style>
 </head>
@@ -663,10 +664,10 @@
         }
     </script>
 
-    <!-- Our Approach Section with Scroll Reveal Animation -->
+    <!-- Our Approach Section with Repeatable Motion Effect -->
     <section id="approach" class="bg-[#111C16] text-[#F7F5F0] py-24 border-t border-[#23382E]">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-16 reveal-item">
+            <div class="text-center max-w-2xl mx-auto mb-16 approach-reveal">
                 <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest block mb-2">Our Approach</span>
                 <h2 class="text-3xl font-light tracking-tight mb-4">FROM ORDER TO SHIPMENT</h2>
                 <p class="text-stone-300 text-sm leading-relaxed">
@@ -675,34 +676,34 @@
             </div>
 
             <!-- Video Player -->
-            <div class="max-w-4xl mx-auto mb-8 rounded-lg overflow-hidden border border-[#23382E] shadow-2xl bg-black reveal-item">
+            <div class="max-w-4xl mx-auto mb-8 rounded-lg overflow-hidden border border-[#23382E] shadow-2xl bg-black approach-reveal">
                 <video controls preload="auto" class="w-full h-auto object-cover max-h-[550px]">
                     <source src="Approachhh (1).mov" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             
-            <div class="text-center mb-16 reveal-item">
+            <div class="text-center mb-16 approach-reveal">
                 <a href="Approachhh (1).mov" target="_blank" class="inline-block bg-[#D4AF37] text-[#111C16] font-semibold text-xs uppercase tracking-widest px-6 py-3 rounded hover:bg-[#c5a030] transition">
                     <i class="fa-solid fa-expand mr-2"></i> Open Video in Full Screen / Separate Page
                 </a>
             </div>
 
-            <!-- Approach Steps Grid with Scroll Reveal -->
+            <!-- Approach Steps Grid with Repeatable Motion -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] reveal-item" style="transition-delay: 0.1s;">
+                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] approach-reveal" style="transition-delay: 0.1s;">
                     <span class="text-[#D4AF37] text-2xl font-light block mb-4">01</span>
                     <h4 class="font-medium text-lg mb-2">Understand Your Requirements</h4>
                     <p class="text-stone-300 text-xs leading-relaxed">We begin by understanding the exact requirements of the order — whether you need blocks, slabs, tiles or cut-to-size material. Quantity, dimensions, thickness, finish, grade, packing requirements and delivery destination are carefully reviewed before production begins.</p>
                 </div>
 
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] reveal-item" style="transition-delay: 0.2s;">
+                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] approach-reveal" style="transition-delay: 0.2s;">
                     <span class="text-[#D4AF37] text-2xl font-light block mb-4">02</span>
                     <h4 class="font-medium text-lg mb-2">Select & Process</h4>
                     <p class="text-stone-300 text-xs leading-relaxed">Once the order is confirmed, the appropriate material is selected and processed according to the agreed specifications. Depending on the requirement, the stone may be prepared as a <strong class="text-[#D4AF37]">raw block, finished slab, tile or customised cut-to-size piece</strong>.</p>
                 </div>
 
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] reveal-item" style="transition-delay: 0.3s;">
+                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] approach-reveal" style="transition-delay: 0.3s;">
                     <span class="text-[#D4AF37] text-2xl font-light block mb-4">03</span>
                     <h4 class="font-medium text-lg mb-2">Quality Inspection</h4>
                     <p class="text-stone-300 text-xs leading-relaxed mb-3">Before packing, every order undergoes a detailed quality inspection by our team. We personally inspect the material for:
@@ -717,19 +718,19 @@
                     We do not dispatch material until it has been inspected and approved by our team.</p>
                 </div>
 
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] reveal-item" style="transition-delay: 0.4s;">
+                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] approach-reveal" style="transition-delay: 0.4s;">
                     <span class="text-[#D4AF37] text-2xl font-light block mb-4">04</span>
                     <h4 class="font-medium text-lg mb-2">Careful Packing & Preparation</h4>
                     <p class="text-stone-300 text-xs leading-relaxed">After final inspection, the material is carefully prepared for transportation. Packing and loading are carried out with the nature, size and format of the material in mind to help ensure safe handling during transit.</p>
                 </div>
 
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] reveal-item" style="transition-delay: 0.5s;">
+                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] approach-reveal" style="transition-delay: 0.5s;">
                     <span class="text-[#D4AF37] text-2xl font-light block mb-4">05</span>
                     <h4 class="font-medium text-lg mb-2">Final Verification Before Dispatch</h4>
                     <p class="text-stone-300 text-xs leading-relaxed">Before the shipment leaves our facility, we conduct a final verification of the material, quantity, packing and shipping documentation. Our objective is simple: <strong class="text-[#D4AF37]">what leaves our facility should match what was approved for the order</strong>.</p>
                 </div>
 
-                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] reveal-item" style="transition-delay: 0.6s;">
+                <div class="border border-[#23382E] p-8 rounded bg-[#17261E] approach-reveal" style="transition-delay: 0.6s;">
                     <span class="text-[#D4AF37] text-2xl font-light block mb-4">06</span>
                     <h4 class="font-medium text-lg mb-2">Dispatch & Shipment</h4>
                     <p class="text-stone-300 text-xs leading-relaxed">Once everything has been checked and approved, the shipment is dispatched to the buyer's designated destination through the agreed logistics arrangement. From blocks and slabs to tiles and customised pieces, we maintain the same attention to quality throughout the process.</p>
@@ -738,25 +739,28 @@
         </div>
     </section>
 
-    <!-- Scroll Reveal Observer Script -->
+    <!-- Repeatable Scroll Reveal Script -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const observerOptions = {
                 root: null,
                 rootMargin: '0px',
-                threshold: 0.15
+                threshold: 0.1
             };
 
-            const observer = new IntersectionObserver((entries, observer) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.formatOptions = { threshold: 0.1 };
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('active');
-                        observer.unobserve(entry.target);
+                    } else {
+                        // Jab element screen se bahar jaye, toh class hata dein taaki jab wapas aayein toh motion fir se ho
+                        entry.target.classList.remove('active');
                     }
                 });
             }, observerOptions);
 
-            document.querySelectorAll('.reveal-item').forEach(item => {
+            document.querySelectorAll('.approach-reveal, .reveal-item').forEach(item => {
                 observer.observe(item);
             });
         });

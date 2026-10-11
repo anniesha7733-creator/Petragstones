@@ -98,11 +98,11 @@
                     <div>
                         <div class="flex justify-between items-center mb-3">
                             <h3 class="text-xl font-medium text-[#D4AF37] tracking-wide">GRANITE</h3>
-                            <span class="bg-[#D4AF37]/20 text-[#D4AF37] text-xs px-2.5 py-1 rounded-full font-semibold">94 Varieties</span>
+                            <span class="bg-[#D4AF37]/20 text-[#D4AF37] text-xs px-2.5 py-1 rounded-full font-semibold">27 Varieties</span>
                         </div>
                         <p class="text-stone-300 text-sm leading-relaxed mb-6">Exceptional strength and distinctive mineral patterns for architectural spaces.</p>
                     </div>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37] flex items-center">View All 94 Varieties <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i></span>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37] flex items-center">View All 27 Varieties <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i></span>
                 </div>
 
                 <div class="bg-[#17261E] p-8 border border-[#23382E] shadow-sm flex flex-col justify-between cursor-pointer hover:border-[#D4AF37] transition group" onclick="openCategoryModal('marble')">
@@ -235,13 +235,163 @@
     <script>
         const stoneData = {
             granite: [
-                "Alaska Gold Granite (SS)", "Blue Flower Granite", "Alpine Forest Granite", "Antique Silver Granite", "Arizona Gold Granite", "Autumn Sky Granite", "Autumn Sky Brown Granite", "Azul Novae Granite", "Bianco Typhoon Granite", "Black Fantasy Granite", "Blue Dunes Granite (FST)", "Blue Dunes Granite (SBM)", "Blue Wave Granite", "Chocolate Brown Granite", "Cosmos Black Granite", "Cosmos Gold Granite (RBG)", "Cosmos Gold Granite (SKM)", "Desert Brown Granite", "Donna Grey Granite", "Elegant Grey Granite", "Glacier White Granite", "Havana Blue Granite", "Indian Nero Marince Granite", "Merphil Granite", "Oyster Blue Granite", "Platinum White Granite", "Silver Falls Granite", "Volcanic White Granite", "Web Grey Granite", "White Exotic Granite", "White Glimmer Granite", "White Knight Granite", "White Mist Granite", "Absolute Black Granite", "Alaska Blue Flower Granite", "Antico Bianco Granite", "Apple Green Granite", "Azul White Granite", "Baltic Brown Granite", "Black Forest Granite", "Black Galaxy Granite", "Black Markino Granite", "Black Pearl Granite", "Chima Pink Granite", "Classic Paradiso Granite", "Colonial Cream Granite", "Colonial Gold Granite", "Colonial White Granite", "Cotton White Granite", "Crystal Blue Granite", "Crystal Yellow Granite", "Desert Gold Granite", "Exotic Brown Granite", "Far East Granite", "Fish Black Granite", "Forest Black Granite", "French Green Granite", "Ghiblee Gold Granite", "Golden Canyon Granite", "Hassan Green Granite", "Himalayan Blue Granite", "Honey Blue Granite", "Ice Blue Granite", "Ice White Granite", "Icon Brown Granite", "Imperial Gold Granite", "Imperial Red Granite", "Imperial White Granite", "Indian Juparana Granite", "Ivory Brown Granite", "Jeerawal White Granite", "Jhansi Red Granite", "Juparana Colombo Granite", "Kashmir White Granite", "Kuppam Green Granite", "Lavender Blue Granite", "Magic Black Granite", "Merry Gold Granite", "Milky White Granite", "Monte Cristo Granite", "Moon White Granite", "New Viscon White Granite", "P White Granite", "Panther Black Granite", "Paradiso Bash Granite", "Raw Silk Ivory Granite", "Rosy Pink Granite", "Royal Cream Granite", "Ruby Red Granite", "Steel Grey Granite", "Tan Brown Granite", "Viscon White Granite", "Vizag Blue Granite", "Whisper White Granite"
-            ].map((name, idx) => ({
-                name: name, 
-                shortDesc: "Export grade premium natural granite surface with exceptional structural durability.",
-                desc: `${name} is a premier grade natural granite directly extracted from exclusive quarry reserves in India. Celebrated for its unique mineral patterns, structural integrity, and high durability, this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab undergoes strict thickness calibration tolerance in standard 20mm and 30mm profiles, polished to a mirror finish.`,
-                img: `https://images.unsplash.com/photo-${1600585154340 + (idx % 15)}-be6161a56a0c?auto=format&fit=crop&w=800&q=85`
-            })),
+                {
+                    name: "Alaska Gold Granite (SS)",
+                    shortDesc: "Alaska Gold Granite (SS) is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Alaska Gold Granite (SS) is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.68 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Alaska Gold Granite (SS) undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "ALASKA GOLD - SS.JPG"
+                },
+                {
+                    name: "Blue Flower Granite",
+                    shortDesc: "Export grade premium natural granite surface with exceptional structural durability.",
+                    desc: "Blue Flower Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "Blue Flower Granite.JPG"
+                },
+                {
+                    name: "Alpine Forest Granite",
+                    shortDesc: "Alpine Forest Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Alpine Forest Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.72 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Alpine Forest Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "ALPINE FOREST AQ.JPG"
+                },
+                {
+                    name: "Antique Silver Granite",
+                    shortDesc: "Antique Silver Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Antique Silver Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.70 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Antique Silver Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "ANTIQUE SILVER - FSJ.JPG"
+                },
+                {
+                    name: "Arizona Gold Granite",
+                    shortDesc: "Arizona Gold Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Arizona Gold Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.69 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Arizona Gold Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "ARIZONA GOLD DKM.JPG"
+                },
+                {
+                    name: "Autumn Sky Granite",
+                    shortDesc: "Export grade premium natural granite surface with exceptional structural durability.",
+                    desc: "Autumn Sky Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in India. Celebrated for its unique mineral patterns, structural integrity, and high durability.",
+                    img: "AUTUMN SKY - YS.JPG"
+                },
+                {
+                    name: "Autumn Sky Brown Granite",
+                    shortDesc: "Autumn Sky Brown Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Autumn Sky Brown Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.72 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Autumn Sky Brown Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "AUTUMN SKY BROWN - YS.JPG"
+                },
+                {
+                    name: "Azul Novae Granite",
+                    shortDesc: "Azul Novae Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in India.",
+                    desc: "Azul Novae Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.75 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Azul Novae Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "AZUL NOVAE.jpg"
+                },
+                {
+                    name: "Bianco Typhoon Granite",
+                    shortDesc: "Bianco Typhoon Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Bianco Typhoon Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.70 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Bianco Typhoon Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "BIANCO TYPHOON TG.JPG"
+                },
+                {
+                    name: "Black Fantasy Granite",
+                    shortDesc: "Black Fantasy Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Black Fantasy Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.78 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Black Fantasy Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "BLACK FANTASY BS.JPG"
+                },
+                {
+                    name: "Blue Dunes Granite (FST)",
+                    shortDesc: "Export grade premium natural granite surface with exceptional structural durability.",
+                    desc: "Blue Dunes Granite (FST) is a premier grade natural granite surface with superior durability and striking patterns.",
+                    img: "BLUE DUNES - FST.JPG"
+                },
+                {
+                    name: "Blue Dunes Granite (SBM)",
+                    shortDesc: "Blue Dunes Granite (SBM) is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Blue Dunes Granite (SBM) is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.73 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Blue Dunes Granite (SBM) undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "BLUE DUNES - SBM.JPG"
+                },
+                {
+                    name: "Blue Wave Granite",
+                    shortDesc: "Blue Wave Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Blue Wave Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.74 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Blue Wave Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "BLUE WAVE - BWS.JPG"
+                },
+                {
+                    name: "Chocolate Brown Granite",
+                    shortDesc: "Chocolate Brown Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Chocolate Brown Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.71 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Chocolate Brown Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "CHOCOLATE BROWN - NG.JPG"
+                },
+                {
+                    name: "Cosmos Black Granite",
+                    shortDesc: "Cosmos Black Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Cosmos Black Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.80 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Cosmos Black Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "COSMOS BLACK MT.JPG"
+                },
+                {
+                    name: "Cosmos Gold Granite (RBG)",
+                    shortDesc: "Export grade premium natural granite surface with exceptional structural durability.",
+                    desc: "Cosmos Gold Granite (RBG) is a premier grade natural granite directly extracted from exclusive quarry reserves in India.",
+                    img: "COSMOS GOLD RBG.JPG"
+                },
+                {
+                    name: "Cosmos Gold Granite (SKM)",
+                    shortDesc: "Cosmos Gold Granite (SKM) is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Cosmos Gold Granite (SKM) is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.76 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Cosmos Gold Granite (SKM) undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "COSMOS GOLD SKM.JPG"
+                },
+                {
+                    name: "Desert Brown Granite",
+                    shortDesc: "Desert Brown Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Desert Brown Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.69 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Desert Brown Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "DESERT BROWN - SG.JPG"
+                },
+                {
+                    name: "Donna Grey Granite",
+                    shortDesc: "Donna Grey Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Donna Grey Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.71 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Donna Grey Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "DONNA GREY - AML.JPG"
+                },
+                {
+                    name: "Elegant Grey Granite",
+                    shortDesc: "Elegant Grey Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Elegant Grey Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.70 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Elegant Grey Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "ELEGANT GREY CM.JPG"
+                },
+                {
+                    name: "Glacier White Granite",
+                    shortDesc: "Glacier White Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Glacier White Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.68 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Glacier White Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "GLACIER WHITE ES.JPG"
+                },
+                {
+                    name: "Havana Blue Granite",
+                    shortDesc: "Havana Blue Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in India.",
+                    desc: "Havana Blue Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.74 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Havana Blue Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "HAVANA BLUE RSI.JPG"
+                },
+                {
+                    name: "Indian Nero Marince Granite",
+                    shortDesc: "Indian Nero Marince Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in South India.",
+                    desc: "Indian Nero Marince Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in South India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.85 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Indian Nero Marince Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "INDIAN NERO MARINCE - PSL.JPG"
+                },
+                {
+                    name: "Merphil Granite",
+                    shortDesc: "Merphil Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Merphil Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.71 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Merphil Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "MERPHIL - AML.JPG"
+                },
+                {
+                    name: "Oyster Blue Granite",
+                    shortDesc: "Oyster Blue Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Oyster Blue Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.73 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Oyster Blue Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "OYSTER BLUE FSJ.JPG"
+                },
+                {
+                    name: "Platinum White Granite",
+                    shortDesc: "Platinum White Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Platinum White Granite is a premier grade natural granite directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.68 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Platinum White Granite undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "PLATINUM WHITE - SRG.JPG"
+                }
+            ],
 
             marble: [
                 {
@@ -391,13 +541,79 @@
             ],
 
             cladding: [
-                "Alaska Gold Pencil Line Wall Cladding", "Alaska Pink Ice Finish Wall Cladding", "Ash Grey 3D Wall Cladding Panel", "Ash Grey Variable Pencil Line Cladding", "Ash Grey Waterjet Finish Cladding", "Ash Grey Architectural Wall Cladding", "Ash Grey Waterfall & Hydro Finish Cladding", "Carbon Black Textured Wall Cladding", "Exotic Brown 3D Elevation Panel", "Exotic Grey Split Face Wall Cladding", "Fire Red Waterjet Finish Wall Cladding", "Green Pearl Architectural Elevation Panel", "MP Beige Natural Wall Cladding Panel", "MP Beige Textured Elevation Strip", "Matrix Pencil Line 3D Cladding", "Matrix Ribbed Architectural Cladding", "Matrix Grooved Elevation Panel", "Matrix Chiseled Wall Cladding", "Matrix Geometric 3D Panel", "Matrix Wave Textured Wall Cladding", "Matrix Classic 3D Elevation Cladding", "Mercury Brown 3D Wall Cladding", "Millennium Grey Interlocking Cladding Panel", "Millennium Grey Fluted Elevation Panel", "Millennium Grey Coral Finish Cladding", "Millennium Grey Textured Wall Cladding", "Olive Green Interlocking Elevation Strip", "Olive Green Textured Wall Cladding", "Onda White Wave 3D Wall Cladding", "Rajasthan Black Split Face Cladding", "Rajasthan White 3D Elevation Panel", "Rainforest Brown 3D Wall Cladding", "Rainforest Green Exotic Wall Cladding", "Red Pearl Architectural Elevation Panel", "Silicano Gold 3D Wall Cladding", "Star Galaxy Architectural Cladding Panel", "Toronto Grey Split Face Wall Cladding", "Toronto 5D Carved Architectural Panel", "Stacked Slate & Quartzite Elevation Strip (Pattern 1)", "Linear 3D Architectural Wall Cladding (Pattern 2)", "Split Face Natural Stone Wall Cladding (Pattern 3)", "Geometric Textured Elevation Panel (Pattern 4)", "Multi-Tonal Ledger Stone Wall Panel (Pattern 5)", "Rustic Multi-Slate 3D Cladding (Pattern 6)"
-            ].map((name, idx) => ({
-                name: name, 
-                shortDesc: "Textured and stacked stone panels designed for architectural elevations.",
-                desc: `${name} is crafted for exquisite architectural elevations and feature walls.`,
-                img: `https://images.unsplash.com/photo-${1513694203232 + (idx % 4)}-719a280e022f?auto=format&fit=crop&w=800&q=85`
-            })),
+                {
+                    name: "Alaska Gold Pencil Line Wall Cladding",
+                    shortDesc: "Alaska Gold Pencil Line Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Alaska Gold Pencil Line Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.68 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Alaska Gold Pencil Line Wall Cladding undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "AlaskaGoldfinishpensilline.png"
+                },
+                {
+                    name: "Alaska Pink Ice Finish Wall Cladding",
+                    shortDesc: "Alaska Pink Ice Finish Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Alaska Pink Ice Finish Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.69 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Alaska Pink Ice Finish Wall Cladding undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "AlaskaPinkicefinish.png"
+                },
+                {
+                    name: "Ash Grey 3D Wall Cladding Panel",
+                    shortDesc: "Ash Grey 3D Wall Cladding Panel is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Ash Grey 3D Wall Cladding Panel is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.72 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Ash Grey 3D Wall Cladding Panel undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "AshGrey 2).png"
+                },
+                {
+                    name: "Ash Grey Variable Pencil Line Cladding",
+                    shortDesc: "Ash Grey Variable Pencil Line Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Ash Grey Variable Pencil Line Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.71 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Ash Grey Variable Pencil Line Cladding undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "AshGreyVeriablepencilline.png"
+                },
+                {
+                    name: "Ash Grey Waterjet Finish Cladding",
+                    shortDesc: "Ash Grey Waterjet Finish Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Ash Grey Waterjet Finish Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.72 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Ash Grey Waterjet Finish Cladding undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "AshGreywaterjet.png"
+                },
+                {
+                    name: "Ash Grey Architectural Wall Cladding",
+                    shortDesc: "Ash Grey Architectural Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Ash Grey Architectural Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.70 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Ash Grey Architectural Wall Cladding undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "AshGreyArchitectural.png"
+                },
+                {
+                    name: "Ash Grey Waterfall & Hydro Finish Cladding",
+                    shortDesc: "Ash Grey Waterfall & Hydro Finish Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Ash Grey Waterfall & Hydro Finish Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.73 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Ash Grey Waterfall & Hydro Finish Cladding undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "AshGreywaterjet.png"
+                },
+                {
+                    name: "Carbon Black Textured Wall Cladding",
+                    shortDesc: "Carbon Black Textured Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Carbon Black Textured Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.85 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Carbon Black Textured Wall Cladding undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "CarbonBlack.png"
+                },
+                {
+                    name: "Exotic Brown 3D Elevation Panel",
+                    shortDesc: "Exotic Brown 3D Elevation Panel is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Exotic Brown 3D Elevation Panel is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.68 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Exotic Brown 3D Elevation Panel undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "Exoticbrown.png"
+                },
+                {
+                    name: "Exotic Grey Split Face Wall Cladding",
+                    shortDesc: "Exotic Grey Split Face Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Exotic Grey Split Face Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.71 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Exotic Grey Split Face Wall Cladding undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "Exoticgrey.png"
+                },
+                {
+                    name: "Fire Red Waterjet Finish Wall Cladding",
+                    shortDesc: "Fire Red Waterjet Finish Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Fire Red Waterjet Finish Wall Cladding is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.75 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Fire Red Waterjet Finish Wall Cladding undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "FireRedwaterjetfinish.png"
+                },
+                {
+                    name: "Green Pearl Architectural Elevation Panel",
+                    shortDesc: "Green Pearl Architectural Elevation Panel is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India.",
+                    desc: "Green Pearl Architectural Elevation Panel is a premier grade natural wall-cladding directly extracted from exclusive quarry reserves in Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.76 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Green Pearl Architectural Elevation Panel undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "GreenPearl.png"
+                }
+            ],
 
             porcelain: [
                 "Agata Blu Bookmatch A Porcelain Slab", "Agata Blu Bookmatch B Porcelain Slab", "Altissimo White Lucido Porcelain Slab", "Altissimo White Matte Porcelain Slab", "Arabescato Corchia Bookmatch A Porcelain Slab", "Arabescato Corchia Bookmatch B Porcelain Slab", "Calacatta Bookmatch A Porcelain Slab", "Calacatta Bookmatch B Porcelain Slab", "Calacatta Vagli Marble Look Porcelain Slab", "Calacatta Supremo Marble Look Porcelain Slab", "Calacatta Paonazzo Porcelain Slab", "Calacatta Gold Bookmatch A Porcelain Slab", "Calacatta Renoir Porcelain Slab", "Concrete Dark Grey Porcelain Slab", "Concrete Taupe Lucido Porcelain Slab", "Concrete Taupe Matte Porcelain Slab", "Crystal Diamond Porcelain Slab", "Grigio Di Gre Porcelain Slab", "Invisible Grey Bookmatch B Porcelain Slab", "Colorado Lincoln Marble Look Porcelain Slab", "Macchia Vecchia Lucido Bookmatch A Porcelain Slab", "Macchia Vecchia Bookmatch B Porcelain Slab", "Marea White Porcelain Slab", "Nero Marquinia Bookmatch A Porcelain Slab", "Nero Marquinia Classic Porcelain Slab", "Nero Imperiale Bookmatch A Porcelain Slab", "Nero Imperiale Bookmatch B Porcelain Slab", "Onyx Amber Bookmatch A Porcelain Slab", "Onyx Amber Bookmatch B Porcelain Slab", "Onyx Black Bookmatch A Porcelain Slab", "Onyx Black Bookmatch B Porcelain Slab", "Quarzo Bookmatch A Porcelain Slab", "Quarzo Bookmatch B Porcelain Slab", "Raku Nero Sintered Porcelain Slab", "Slate Black Textured Porcelain Slab", "Slate Grey Textured Porcelain Slab", "Statuario Extra Bookmatch A Porcelain Slab", "Statuario Michelangelo Porcelain Slab", "Statuario White Bookmatch II Porcelain Slab", "Statuario White Bookmatch I Porcelain Slab", "White Paradise Bookmatch A Porcelain Slab", "White Paradise Bookmatch B Porcelain Slab"
@@ -801,7 +1017,7 @@
     </section>
 
     <!-- India's Global Export Gateways Section (Unique Fresh Phrasing & Repeatable Reveal) -->
-    <section id="gateways" class="bg-[#17261E] text-[#F7F5F0] py-24 border-t border-[#23382E]">
+    <section id="gateways" class="bg-[#111C16] text-[#F7F5F0] py-24 border-t border-[#23382E]">
         <div class="max-w-7xl mx-auto px-6">
             
             <!-- Section Header -->

@@ -21,7 +21,7 @@
             transform: translateY(0);
         }
 
-        /* Approach section par thoda sa alag subtle scale aur slide effect */
+        /* Approach and Export section reveal styling */
         .approach-reveal {
             opacity: 0;
             transform: translateY(35px) scale(0.98);
@@ -48,6 +48,7 @@
                 <a href="#home" class="hover:text-[#D4AF37] transition">Home</a>
                 <a href="#collections" class="hover:text-[#D4AF37] transition">Collections</a>
                 <a href="#approach" class="hover:text-[#D4AF37] transition">Our Approach</a>
+                <a href="#gateways" class="hover:text-[#D4AF37] transition">Export Hubs</a>
                 <a href="#process" class="hover:text-[#D4AF37] transition">Process</a>
                 <a href="#contact" class="hover:text-[#D4AF37] transition">Contact</a>
             </nav>
@@ -576,13 +577,49 @@
             ],
 
             limestone: [
-                "Chittor Black Limestone", "Kadappa Black Limestone", "Kota Blue Limestone", "Kota Yellow Limestone", "Tandur Blue Limestone", "Tandur Grey Limestone", "Tandur Yellow Limestone"
-            ].map((name, idx) => ({
-                name: name, 
-                shortDesc: "Subtle sedimentary limestone with smooth finishes for architectural flooring.",
-                desc: `${name} is a fine sedimentary limestone with smooth honed finishes for architectural flooring.`,
-                img: `https://images.unsplash.com/photo-${1513694203232 + (idx % 3)}-719a280e022f?auto=format&fit=crop&w=800&q=85`
-            })),
+                {
+                    name: "Chittor Black Limestone",
+                    shortDesc: "Premier grade natural limestone directly extracted from exclusive quarry reserves in Chittorgarh.",
+                    desc: "Chittor Black Limestone is a premier grade natural limestone directly extracted from exclusive quarry reserves in Chittorgarh, Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.68 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Chittor Black Limestone undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "Chittor Black Limestone.png"
+                },
+                {
+                    name: "Kadappa Black Limestone",
+                    shortDesc: "Premier grade natural limestone directly extracted from exclusive quarry reserves in Kadapa.",
+                    desc: "Kadappa Black Limestone is a premier grade natural limestone directly extracted from exclusive quarry reserves in Kadapa, Andhra Pradesh, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.70 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Kadappa Black Limestone undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "Kadappa Black Limestone.png"
+                },
+                {
+                    name: "Kota Blue Limestone",
+                    shortDesc: "Premier grade natural limestone directly extracted from exclusive quarry reserves in Kota.",
+                    desc: "Kota Blue Limestone is a premier grade natural limestone directly extracted from exclusive quarry reserves in Kota, Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.65 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Kota Blue Limestone undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "Kota Blue Limestone.png"
+                },
+                {
+                    name: "Kota Yellow Limestone",
+                    shortDesc: "Premier grade natural limestone directly extracted from exclusive quarry reserves in Kota.",
+                    desc: "Kota Yellow Limestone is a premier grade natural limestone directly extracted from exclusive quarry reserves in Kota, Rajasthan, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.64 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Kota Yellow Limestone undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "Kota Yellow Limestone.png"
+                },
+                {
+                    name: "Tandur Blue Limestone",
+                    shortDesc: "Premier grade natural limestone directly extracted from exclusive quarry reserves in Tandur.",
+                    desc: "Tandur Blue Limestone is a premier grade natural limestone directly extracted from exclusive quarry reserves in Tandur, Telangana, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.67 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Tandur Blue Limestone undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "Tandur Blue Limestone.png"
+                },
+                {
+                    name: "Tandur Grey Limestone",
+                    shortDesc: "Premier grade natural limestone directly extracted from exclusive quarry reserves in Tandur.",
+                    desc: "Tandur Grey Limestone is a premier grade natural limestone directly extracted from exclusive quarry reserves in Tandur, Telangana, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.66 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Tandur Grey Limestone undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "Tandur Grey Limestone.png"
+                },
+                {
+                    name: "Tandur Yellow Limestone",
+                    shortDesc: "Premier grade natural limestone directly extracted from exclusive quarry reserves in Tandur.",
+                    desc: "Tandur Yellow Limestone is a premier grade natural limestone directly extracted from exclusive quarry reserves in Tandur, Telangana, India. Celebrated for its unique veining, natural structural integrity, and high mineral density (2.65 g/cm³), this surface brings timeless architectural elegance to luxury commercial developments, high-end residential villas, and hospitality landmarks.\n\nProcessed in state-of-the-art automated manufacturing facilities, every slab of Tandur Yellow Limestone undergoes Italian gangsaw cutting with strict ±1mm thickness calibration tolerance in standard 20mm and 30mm profiles. Slabs are reinforced with fiberglass net backing and polished using 24-head automated line polishers to achieve an extraordinary 95+ Gloss Luster finish.",
+                    img: "Tandur Yellow Limestone.png"
+                }
+            ],
 
             slate: [
                 {
@@ -672,6 +709,34 @@
         function closeDetailModal() {
             document.getElementById('detailModal').style.display = 'none';
         }
+
+        // Interactive Export Hub Switcher
+        function switchHub(hubName) {
+            const mundraCard = document.getElementById('mundraCard');
+            const chennaiCard = document.getElementById('chennaiCard');
+            const mundraBtn = document.getElementById('mundraBtn');
+            const chennaiBtn = document.getElementById('chennaiBtn');
+
+            if(hubName === 'mundra') {
+                mundraCard.className = "bg-[#17261E] border-2 border-[#D4AF37] p-8 rounded-xl shadow-2xl transition-all duration-300";
+                chennaiCard.className = "bg-[#111C16] border border-[#23382E] p-8 rounded-xl shadow-md transition-all duration-300 opacity-80 hover:opacity-100";
+                
+                mundraBtn.innerHTML = "ACTIVE HUB";
+                mundraBtn.className = "bg-[#D4AF37] text-[#111C16] text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest";
+                
+                chennaiBtn.innerHTML = "SELECT HUB";
+                chennaiBtn.className = "border border-stone-600 text-stone-300 text-[11px] font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest hover:border-[#D4AF37] hover:text-[#D4AF37] transition";
+            } else {
+                chennaiCard.className = "bg-[#17261E] border-2 border-[#D4AF37] p-8 rounded-xl shadow-2xl transition-all duration-300";
+                mundraCard.className = "bg-[#111C16] border border-[#23382E] p-8 rounded-xl shadow-md transition-all duration-300 opacity-80 hover:opacity-100";
+                
+                chennaiBtn.innerHTML = "ACTIVE HUB";
+                chennaiBtn.className = "bg-[#D4AF37] text-[#111C16] text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest";
+                
+                mundraBtn.innerHTML = "SELECT HUB";
+                mundraBtn.className = "border border-stone-600 text-stone-300 text-[11px] font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest hover:border-[#D4AF37] hover:text-[#D4AF37] transition";
+            }
+        }
     </script>
 
     <!-- Our Approach Section with Repeatable Motion Effect -->
@@ -746,6 +811,77 @@
                     <p class="text-stone-300 text-xs leading-relaxed">Once everything has been checked and approved, the shipment is dispatched to the buyer's designated destination through the agreed logistics arrangement. From blocks and slabs to tiles and customised pieces, we maintain the same attention to quality throughout the process.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- India's Global Export Gateways Section (Interactive & Repeatable Reveal) -->
+    <section id="gateways" class="bg-[#17261E] text-[#F7F5F0] py-24 border-t border-[#23382E]">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- Section Header -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16 approach-reveal">
+                <div>
+                    <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-[0.2em] block mb-3">India's Global Export Gateways</span>
+                    <h2 class="text-3xl md:text-4xl font-light tracking-tight text-white leading-tight">
+                        Direct Container Shipping for Marble & Granite via Mundra & Chennai Ports
+                    </h2>
+                </div>
+                <div>
+                    <p class="text-stone-300 text-sm leading-relaxed font-light">
+                        As a trusted Marble and Granite Exporter from India, Petra G Stones delivers premium natural stone through India's premier international ports. Our streamlined export operations ensure secure container loading, faster transit, meticulous documentation, and reliable global delivery for architects, importers, wholesalers, distributors, and construction projects across Saudi Arabia, UAE, Europe, the USA, and beyond.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Interactive Port Hub Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 approach-reveal">
+                
+                <!-- Mundra Port Hub -->
+                <div id="mundraCard" onclick="switchHub('mundra')" class="bg-[#17261E] border-2 border-[#D4AF37] p-8 rounded-xl shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest">West India Export Hub</span>
+                        <button id="mundraBtn" class="bg-[#D4AF37] text-[#111C16] text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">ACTIVE HUB</button>
+                    </div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="h-12 w-12 rounded-lg bg-[#23382E] flex items-center justify-center text-[#D4AF37] text-xl">
+                            <i class="fa-solid fa-ship"></i>
+                        </div>
+                        <h3 class="text-2xl font-medium text-white tracking-wide">Mundra Port</h3>
+                    </div>
+                    <p class="text-stone-300 text-sm leading-relaxed mb-8">
+                        Our primary export hub for premium marble, quartzite, sandstone, limestone, and engineered stone. Located on India's west coast, Mundra Port enables fast container movement to the Middle East, Europe, Africa, and North America with efficient customs clearance and global shipping connectivity.
+                    </p>
+                    <div class="border-t border-[#23382E] pt-6 flex flex-wrap gap-3">
+                        <span class="bg-[#111C16] text-[#D4AF37] text-xs px-3 py-1.5 rounded border border-[#23382E]"><i class="fa-solid fa-circle-check mr-1.5 text-green-400"></i> Marble Slabs Export</span>
+                        <span class="bg-[#111C16] text-[#D4AF37] text-xs px-3 py-1.5 rounded border border-[#23382E]"><i class="fa-solid fa-circle-check mr-1.5 text-green-400"></i> 24/7 Container Operations</span>
+                        <span class="bg-[#111C16] text-[#D4AF37] text-xs px-3 py-1.5 rounded border border-[#23382E]"><i class="fa-solid fa-circle-check mr-1.5 text-green-400"></i> Saudi Arabia • UAE • Europe</span>
+                    </div>
+                </div>
+
+                <!-- Chennai Port Hub -->
+                <div id="chennaiCard" onclick="switchHub('chennai')" class="bg-[#111C16] border border-[#23382E] p-8 rounded-xl shadow-md transition-all duration-300 opacity-80 hover:opacity-100 cursor-pointer">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest">South India Export Hub</span>
+                        <button id="chennaiBtn" class="border border-stone-600 text-stone-300 text-[11px] font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest hover:border-[#D4AF37] hover:text-[#D4AF37] transition">SELECT HUB</button>
+                    </div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="h-12 w-12 rounded-lg bg-[#23382E] flex items-center justify-center text-[#D4AF37] text-xl">
+                            <i class="fa-solid fa-anchor"></i>
+                        </div>
+                        <h3 class="text-2xl font-medium text-white tracking-wide">Chennai Port</h3>
+                    </div>
+                    <p class="text-stone-300 text-sm leading-relaxed mb-8">
+                        Dedicated export gateway for premium granite, black granite, quartzite, and natural stone products. Chennai Port offers dependable shipping routes to Southeast Asia, Australia, the Gulf region, and international construction markets with efficient logistics support.
+                    </p>
+                    <div class="border-t border-[#23382E] pt-6 flex flex-wrap gap-3">
+                        <span class="bg-[#17261E] text-[#D4AF37] text-xs px-3 py-1.5 rounded border border-[#23382E]"><i class="fa-solid fa-circle-check mr-1.5 text-green-400"></i> Granite Export</span>
+                        <span class="bg-[#17261E] text-[#D4AF37] text-xs px-3 py-1.5 rounded border border-[#23382E]"><i class="fa-solid fa-circle-check mr-1.5 text-green-400"></i> Global Shipping Network</span>
+                        <span class="bg-[#17261E] text-[#D4AF37] text-xs px-3 py-1.5 rounded border border-[#23382E]"><i class="fa-solid fa-circle-check mr-1.5 text-green-400"></i> Asia • Australia • GCC</span>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
